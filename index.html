@@ -128,7 +128,7 @@
 				</div>
 
 				<!-- Project abstract -->
-				<div class="arlo_tm_section" style="margin-top: -10%;">
+				<div class="arlo_tm_section" style="margin-top: -8%;">
 					<div class="arlo_tm_skills_wrap">
 						<div class="container">
 							<div class="arlo_tm_title_holder news">
@@ -146,18 +146,19 @@
 									<div class="arlo_tm_mini_title_holder">
 										<h4>Project Abstract</h4>
 									</div>
-									<p>We are designing an online survey tool for hospitals. The surveys are designed by hospital staff using a web application and delivered to patients using a progressive web app. A database stores the anonymised patient feedback, which can be exported for further analysis.</p>
+									<p>Hospital Surveys is an online survey tool for hospitals. The surveys are designed by hospital staff using a web application and delivered to patients using a progressive web app. A database stores the anonymised patient feedback, which can be exported for further analysis.</p>
 								</div>
 								<div class="rightbox">
 									<div class="arlo_tm_mini_title_holder">
 										<h4>Key Features</h4>
 									</div>
 									<ul>
-										<li>Progressive web app (works on web and mobile).</li>
-										<li>App allows to design, create, and manage questionnaires stored in a database.</li>
-										<li>App allows child patients to answer questionnaires.</li>
-										<li>App allows GOSH staff to analyse data from questionnaires with admin rights.</li>
-										<li>App is hosted on Heroku.</li>		
+										<li>Progressive Web Application.</li>
+										<li>App allows admins to design, create, and manage questionnaires stored in a database, 
+											in turn allowing child patients to answer these questionnaires.</li>
+										<li>Data analysis of questionnaire data and responses</li>
+										<li>Django back-end REST API, rendered with a React JS front-end User Interface.</li>
+										<li>Web app is hosted on Heroku.</li>		
 									</ul>
 								</div>
 							</div>
@@ -220,7 +221,7 @@
 							<div class="arlo_tm_title_holder">
 								<h3>Requirements</h3>
 								<span>User Requirements for Hospital Surveys</span></div>
-							<h4><b>Gathering User Requirements:</b></h4><br>
+							<h3><b>Gathering User Requirements:</b></h3><br>
 							<p>	We’ve decided to carry out a <b>semi-structured interview</b> for the two users that would use our product, which are the <b>GOSH DRIVE Admins</b> designing questionnaires, and the <b>child patients</b> answering them.</p><br>&nbsp;
 							<div class="arlo_tm_about_wrap">
 								<div class="author_wrap">
@@ -280,9 +281,10 @@
 												<li>
 													<label><h5><b>Should Have:</b></h5></label> 
 													<ul>
-														<li>Separation of questionnaires aimed at different age groups and patient types (e.g. inpatients, outpatients)</li>
+														<li>Separation of questionnaires aimed at different age groups and patient types (e.g. inpatients, outpatients).</li>
 														<li>Uncomplicated UI to allow design of questionnaires of users who do not have a background in computer science.</li>
 														<li>Simple design and UI for patients answering questionnaires.</li>
+														<li>User authentication for GOSH DRIVE admins using the web app.</li>
 														<li>Acceptance of different types of answers for the questionnaire designs e.g. drop-down, MCQ, sliders, text.</li>
 													</ul>
 												</li><br>
@@ -361,8 +363,8 @@
 									<li class="wow fadeInUp"  style="width:47%" data-wow-duration="1.2s" data-wow-delay="0.2s">
 										<div class="inner_list">
 											<div class="image_wrap">
-												<img class="small" src="img/new/image11.png" alt=""height="480" width="570"/>
-												<img class="big" src="img/new/image11.png" alt=""/>
+												<img class="small" src="img/new/usediagram.png" alt=""height="580" width="500"/>
+												<img class="big" src="img/new/usediagram.png" alt=""/>
 											<div class="definitions_wrap">
 												<div class="date_wrap">
 												</div>
@@ -376,7 +378,7 @@
 									<li class="wow fadeInUp" style="width: 48%" data-wow-duration="1.2s" data-wow-delay="0.2s">
 										<div class="inner_list">
 											<div class="image_wrap">
-												<img class="small" src="img/new/usecaselist.png" alt="" height="480" width="600"/>
+												<img class="small" src="img/new/usecaselist.png" alt="" height="580" width="500"/>
 												<img class="big" src="img/new/usecaselist.png" alt="" />
 											<div class="definitions_wrap">
 												<div class="date_wrap">
@@ -492,9 +494,78 @@
 				</div>
 				<!-- /Related Technologies -->
 				<br>
-				<!-- SKILLS -->
-				<div class="arlo_tm_section">
+
+				
+
+				<!-- Related Projects -->
+				<div class="arlo_tm_section" id="related_projects">
 					<div class="arlo_tm_skills_wrap">
+						<div class="container">
+							<div class="arlo_tm_title_holder">
+								<h3>Related Projects:</h3>
+								<span>Our research on projects similar to Hospital Surveys</span>
+							</div>
+							
+							<div class="arlo_tm_section" >
+								<div class="arlo_tm_services_wrap">
+									<div class="container">
+										<br>
+										<div class="list_wrap">
+											<ul>
+												<li>
+													<div class="inner">
+														<div class="icon">
+															<img class="svg" src="img/svg/camera-diaphragm.svg" alt="" /></div>
+														<div class="title_service">
+															<a href="https://www.surveymonkey.com/"><h3>Survey Monkey</h3></a>
+														</div>
+														<div class="text">
+															<p>Survey Monkey is a website designed particularly for admins to design questionnaires. 
+																It is written in Python and developed with the .NET framework.
+																It offers a wide range of functionalities, including functionalities to import questionnaires from templates, 
+																analyse results, and obtain verified responses for your questionnaires.</p><br>
+															<p>It is very similar to our project, Hospital Surveys, as it allows for questionnaires that are highly customizable[4]. 
+																However, not all of these functionalities will be implemented, as many of these features are outside the scope of our project.</p>
+														</div>
+													</div>
+												</li>
+
+												<li>
+													<div class="inner">
+														<div class="icon">
+															<img class="svg" src="img/svg/camera-diaphragm.svg" alt="" /></div>
+														<div class="title_service">
+															<a href="https://www.google.co.uk/forms/about/"><h3>Google Forms</h3></a>
+														</div>
+														<div class="text">
+															<p>Google forms is also designed for users to design questionnaires, 
+																and for users to respond to these questionnaires easily[5] and efficiently.
+																Google Forms allows for admins to design questionnaires to obtain responses in a short amount of time. 
+																Due to its popularity, users are able to obtain a large amount of responses easily.</p><br>
+															<p>In our project, we plan to implement the simple UI design for users to design questionnaires, 
+																but we require more detailed ways to process the data from the responses obtained, i.e. through a database. </p>
+														</div>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<h3>Conclusion</h3><br>
+							<p>Google Forms offers less customization and functionality than Survey Monkey but is much more user-friendly. 
+								On the other hand, Survey Monkey is more focused on the questionnaires itself, and places more emphasis on the users creating the questionnaires. 
+								They both have their own merits. Google Forms' <b>straight-forward</b> UI and Survey Monkey's <b>customizability</b> were both great features to have for our web-app.
+							</p>
+						</div>
+					</div>
+				</div>
+				<!-- /Related Projects -->
+
+				<!-- Research References -->
+				<div class="arlo_tm_section">
+					<div class="arlo_tm_services_wrap">
 						<div class="container">
 							<div class="inner_wrap">
 								<div class="total">
@@ -505,12 +576,12 @@
 										<b>Flask vs Django</b><br>
 										[1] Mindfire Solutions, “Flask vs Django“<br>
 										Available: <a href="http://www.mindfiresolutions.com/blog/2018/05/flask-vs-django/">http://www.mindfiresolutions.com/blog/2018/05/flask-vs-django/</a><br>
-										[Accessed: Oct 20, 2018]<br>
+										[Accessed: Oct 20, 2019]<br>
 										<br>
 										<b>React vs. Vue</b><br>
 										[2] Yogev Ahuvia, “React vs. Vue (vs. Angular)”<br>
 										Available: <a href="https://medium.com/fundbox-engineering/react-vs-vue-vs-angular-163f1ae7be56">https://medium.com/fundbox-engineering/react-vs-vue-vs-angular-163f1ae7be56</a><br>
-										[Accessed:  Oct 21, 2018]<br>
+										[Accessed:  Oct 21, 2019]<br>
 										<br>
 										<b>Progressive Frameworks and Service Workers</b><br>
 										[3] Ian Sutherland, “Making a Progressive Web App”<br>
@@ -533,62 +604,7 @@
 						</div>
 					</div>
 				</div>
-				<!-- /SKILLS -->
-
-				<!-- Related Projects -->
-				<div class="arlo_tm_section" id="related_projects">
-					<div class="arlo_tm_services_wrap">
-						<div class="container">
-							<div class="arlo_tm_title_holder">
-								<h3>Related Projects:</h3>
-								<span>Our research on projects similar to Hospital Surveys</span>
-							</div>
-							<div class="list_wrap">
-								<ul>
-									<li>
-										<div class="inner">
-											<div class="icon">
-												<img class="svg" src="img/svg/camera-diaphragm.svg" alt="" /></div>
-											<div class="title_service">
-												<a href="https://www.surveymonkey.com/"><h3>Survey Monkey</h3></a>
-											</div>
-											<div class="text">
-												<p>Survey Monkey is a website designed particularly for admins to design questionnaires. 
-													It is written in Python and developed with the .NET framework.
-													It offers a wide range of functionalities, including functionalities to import questionnaires from templates, 
-													analyse results, and obtain verified responses for your questionnaires. 
-													It is very similar to our project, Hospital Surveys, as it allows for questionnaires that are highly customizable[4]. 
-													However, not all of these functionalities will be implemented.</p>
-											</div>
-										</div>
-									</li>
-									<li>
-										<div class="inner">
-											<div class="icon">
-												<img class="svg" src="img/svg/new-tab.svg" alt="" /></div>
-											<div class="title_service">
-												<a href="https://www.google.com/forms/about/"><h3>Google Forms</h3></a>
-											</div>
-											<div class="text">
-												<p>Google forms is also designed for users to design questionnaires, 
-													and for users to respond to these questionnaires easily[5] and efficiently.
-													Google Forms allows for admins to design questionnaires to obtain responses in a short amount of time. 
-													In our project, we plan to implement the simple UI design for users to design questionnaires, 
-													but we require a more detailed way to process the data from the responses obtained, i.e. through a database. </p>
-											</div>
-										</div>
-									</li>
-								</ul>
-							</div><br>&nbsp;<br>&nbsp;
-							<h3>Conclusion</h3><br>
-							<p>Google Forms offers less customization and functionality than Survey Monkey but is much more user-friendly. 
-								However, Survey Monkey is more focused on the questionnaires itself, and places more emphasis on the users creating the questionnaires. 
-								They both have their own merits. Google Forms' <b>straight-forward</b> UI and Survey Monkey's <b>customizability</b> were both great features to have for our web-app.
-							</p>
-						</div>
-					</div>
-				</div>
-				<!-- /Related Projects -->
+				<!-- Research References -->
 
 				<!-- Achievements -->
 				<div class="arlo_tm_section" id="achievements">
@@ -781,14 +797,15 @@
 						<div class="container">
 							<div class="arlo_tm_title_holder news">
 								<h3>DESIGN</h3>
-								<span>Since we are using a database, we came up with an ER diagram describing the tables and objects of the Questionnaires and Questionnaire Answers.</span>							</div>
+								<span>Architecture Diagram and ER Diagram describing our solution.</span>							
+							</div>
 							<div class="arlo_tm_list_wrap blog_list">
 								<ul class="total">
-									<li class="wow fadeInUp"  data-wow-duration="1.2s">
+									<li class="wow fadeInUp"  style="width: 100%" data-wow-duration="1.2s">
 										<div class="inner_list">
 											<div class="image_wrap">
-												<img class="small" src="img/new/image5.png" alt=""height="500" width="700"/>
-												<img class="big" src="img/new/image5.png" alt=""/>
+												<img class="small" src="img/new/systemarhitecture.png" alt=""height="650" width="100%"/>
+												<img class="big" src="img/new/systemarhitecture.png" alt=""/>
 												<div class="definitions_wrap">
 													<div class="date_wrap">
 													</div>
@@ -799,7 +816,13 @@
 											</div>
 										</div>
 									</li>
-									<li class="wow fadeInUp" style="height: 500%" data-wow-duration="1.2s" data-wow-delay="0.2s">
+								</ul>
+							</div>
+							<br>&nbsp;
+
+							<div class="arlo_tm_list_wrap blog_list">
+								<ul class="total">
+									<li class="wow fadeInUp" style="width: 100%" data-wow-duration="1.2s" data-wow-delay="0.2s">
 										<div class="inner_list">
 											<div class="image_wrap">
 												<img class="small" src="img/new/image8.png" alt="" height="400" width="600"/>
@@ -812,6 +835,7 @@
 													</div>
 												</div>
 											</div>
+										</div>
 									</li>
 								</ul>
 							</div>
@@ -895,13 +919,13 @@
 										<h3>Deployment Manual</h3>
 										<span>How to setup the Web App</span>
 									</div>
-										<h4>User manual:</h4><br>
+										<h3>User manual:</h3><br>
 										<b>To access the web-app,</b> go to<br><a href="https://djreact-surveys.herokuapp.com/">https://djreact-surveys.herokuapp.com/</a><br><br>
 										<b>To access the Django back-end Admin,</b> go to<br> <a href="https://djreact-surveys.herokuapp.com/admin/">https://djreact-surveys.herokuapp.com/admin/</a><br>
 										Admin username: admin<br>
 										Admin password: admin<br>
 										<br><br>
-										<h4>Deployment manual:</h4><br>
+										<h3>Deployment manual:</h3><br>
 										<b>React Front-End:</b><br>
 										To run: Install npm, then change directory to /hospital-surveys. Then run the command: ‘npm start’.<br>
 										<b>Django Back-End:</b><br>
@@ -914,31 +938,7 @@
 						</div>
 					</div>
 				</div>
-
-
-				<!-- Plan -->
-				<div class="arlo_tm_section">
-					<div class="arlo_tm_skills_wrap">
-						<div class="container">
-							<div class="inner_wrap">
-								<div class="total">
-									<div class="arlo_tm_title_holder news">
-										<h3>Plan For Term 2</h3>
-										<span>Our future plans</span>
-									</div>
-									<p><h4>Plan Summary</h4><br>
-									Before term 2 started, we have completed most requirements with tag must and planning on finishing all requirements with tag should and could in product backlog. Based on our team meetings and interaction with customers we are going to set local deadlines for each of  requirements remaining and use agile principles in order to complete them.</p><br>
-									<p><h4>Questionnaire Response Page</h4><br>
-									We will be planning to finish up the patient page in answering questionnaires within a time span of roughly 2 weeks.
-									</p><br>
-									<p><h4>Statistical Analysis</h4><br>
-									If time allows for it, we will be implementating statistical analysis on the patient responses on the questionnaires. 
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+	
 
 				<!-- Bi-WEEKLY REPORTS-->
 				<div class="arlo_tm_section" id="reports">
@@ -946,7 +946,7 @@
 						<div class="container">
 							<div class="arlo_tm_title_holder news">
 								<h3>BI-WEEKLY REPORTS</h3>
-								<span>Bi-weekly reports keeping track of work process.</span></div>
+								<span>Bi-weekly reports keeping track of our progress.</span></div>
 							<a href="reports/report2.pdf">Report 2</a>
 							<div class="arlo_tm_list_wrap blog_list">
 								<ul class="total">
