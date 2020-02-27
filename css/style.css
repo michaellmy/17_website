@@ -24,9 +24,74 @@
 
 
 /*---------------------------------------------------*/
+
+/* LIST TABLE
+/*---------------------------------------------------*/
+/* Dilemma List */
+#dilemma {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+#dilemma td, #dilemma th{
+	border: 1px solid #ddd;
+	padding: 8px;
+	color: black;
+}
+
+#dilemma tr:nth-child(even){background-color: white;}
+
+#dilemma tr:nth-child(odd){background-color: white;}
+
+#dilemma tr:hover {background-color: #ddd;}
+
+#dilemma th {
+	padding-left: 30px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background-color: #003366;
+	color: white;
+}
+
+#dilemma td {
+	padding-left: 30px;
+}
+
+/* MoSCoW List  */
+#moscow_list {
+	/* font-family: Tahoma, Geneva, sans-serif; */
+	border-collapse: collapse;
+	width: 100%;
+}
+
+#moscow_list td, #moscow_list th {
+	border: 1px solid #ddd;
+	padding: 8px;
+	color: black;
+}
+
+#moscow_list tr:nth-child(even){background-color: white;}
+
+#moscow_list tr:nth-child(odd){background-color: white;}
+
+#moscow_list tr:hover {background-color: #ddd;}
+
+#moscow_list th {
+	padding-left: 30px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background-color: #003366;
+	color: white;
+}
+
+#moscow_list td {
+	padding-left: 30px;
+}
+
 /*	01) ARLO BASE
 /*---------------------------------------------------*/
-
 html {
 	overflow-x: hidden;
 	padding: 0px;
@@ -101,9 +166,9 @@ img.svg{
   -webkit-transition: .2s all ease;
   -o-transition: .2s all ease;
   transition: .2s all ease;
-  -webkit-transition-delay: .5s;
-  -o-transition-delay: .5s;
-  transition-delay: .5s; }  
+  -webkit-transition-delay: .2s;
+  -o-transition-delay: .2s;
+  transition-delay: .2s; }  
 .arlo_tm_preloader .spinner_wrap{
 	position: absolute;
 	top: 50%;
@@ -509,7 +574,7 @@ img.svg{
 	clear: both;
 	float: left;
 	text-align: left;
-	padding-bottom: 100px;
+	padding-bottom: 60px;
 	position: relative;
 	
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
@@ -590,7 +655,7 @@ img.svg{
 	height: auto;
 	clear: both;
 	float: left;
-	background-color: #fff;
+	background-color: #ecf2f8;
 	
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
 	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
@@ -782,7 +847,7 @@ img.svg{
 }
 .arlo_tm_about_wrap .buttons_wrap ul li a{
 	text-decoration: none;
-    color: #fff;
+    color: #fafafa;
     background-color: #E3872D;
     font-weight: 600;
     font-family: "Montserrat";
@@ -968,7 +1033,7 @@ img.svg{
 	height: auto;
 	clear: both;
 	float: left;
-	background-color: #fff;
+	background-color: #ecf2f8;
 	margin-bottom: 70px;
 	text-align: left;
 	
@@ -1114,7 +1179,7 @@ img.svg{
 /*	06) ARLO PORTFOLIO
 /*---------------------------------------------------*/
 
-.arlo_tm_title_holder.portfolio{padding-bottom: 90px;}
+.arlo_tm_title_holder.portfolio{padding-bottom: 0px;}
 .arlo_tm_portfolio_wrapper_all{
 	width: 100%;
 	height: auto;

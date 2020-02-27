@@ -28,7 +28,7 @@
 <body>
 
 <!-- WRAPPER ALL -->
-<div class="arlo_tm_wrapper_all">
+<div class="arlo_tm_wrapper_all" style="background-color: #ecf2f8;">
 
 	<div id="arlo_tm_popup_blog">
 		<div class="container">
@@ -133,24 +133,43 @@
 						<div class="container">
 							<div class="arlo_tm_title_holder news">
 								<h3>Home</h3>
-								<span>Project Description</span></div>
+								<span>About Hospital Surveys</span></div>
 							<div class="inner_wrap">
 								<div class="leftbox">
 									<div class="arlo_tm_mini_title_holder">
-										<h4><b>Project Title: Hospital Surveys</b></h4><br>
+										<h3><b>Project Title: Hospital Surveys</b></h3>
 									</div>
 								</div>
+							</div><br>&nbsp;<br>&nbsp;
+							<div class="inner_wrap">
+								<div class="total">
+									<div class="arlo_tm_mini_title_holder">
+										<h3><b>Our motivation:</b></h3><br>
+									</div>
+									<h6><b>Let the voices of these children be heard.</b></h6><br>
+									<p> We believe it is crucial for child patients of GOSH to be able to provide feedback based on 
+										their experiences in the hospital. Whether it be the facilities of the hospital, the way patients are treated, 
+										or just their overall experience during treatment, feedback not only allows children to 
+										share their experiences, but also helps improve hospital services. We at Hospital 
+										Surveys believe these child patients must feel safe when expressing themselves, and providing feedback should 
+										be a smooth and easy experience.
+									</p>
+								</div>
 							</div>
+							<br>&nbsp;<br>&nbsp;
 							<div class="inner_wrap">
 								<div class="leftbox">
 									<div class="arlo_tm_mini_title_holder">
-										<h4>Project Abstract</h4>
+										<h4>Project Abstract:</h4>
 									</div>
-									<p>Hospital Surveys is an online survey tool for hospitals. The surveys are designed by hospital staff using a web application and delivered to patients using a progressive web app. A database stores the anonymised patient feedback, which can be exported for further analysis.</p>
+									<p>Hospital Surveys is an online survey tool for hospitals. Surveys are designed by 
+										hospital staff using a web application and delivered to patients using a progressive 
+										web app. A database stores the anonymised patient feedback, which can be exported for 
+										further analysis.</p>
 								</div>
 								<div class="rightbox">
 									<div class="arlo_tm_mini_title_holder">
-										<h4>Key Features</h4>
+										<h4>Key Features:</h4>
 									</div>
 									<ul>
 										<li>Progressive Web Application.</li>
@@ -179,7 +198,7 @@
 							<div class="list_wrap">
 								<ul>
 									<li>
-										<div class="inner">
+										<div class="inner" style="background-color: #f8f8f8;">
 											<div class="title_service">
 												<h3>Min Yen Lau</h3>
 											</div>
@@ -189,7 +208,7 @@
 										</div>
 									</li>
 									<li>
-										<div class="inner">
+										<div class="inner" style="background-color: #f8f8f8;">
 											<div class="title_service">
 												<h3>Shengtong Jiang</h3>
 											</div>
@@ -199,7 +218,7 @@
 										</div>
 									</li>
 									<li>
-										<div class="inner">
+										<div class="inner" style="background-color: #f8f8f8;">
 											<div class="title_service">
 												<h3>Bahdan Kapionkin</h3>
 											</div>
@@ -263,47 +282,33 @@
 								<h3>MoSCoW List of Requirements:</h3>
 								<span>After doing research and multiple discussions, we came up with a list of requirements after agreements with our project partners.
 								</span></div>
-							<div class="arlo_tm_about_wrap">
-								<div class="author_wrap">
-									<div class="total" style="padding-left: 5%">
-										<div>
-											<ul>
-												<li>
-													<label><h5><b>Must Have:</b></h5></label> 
-													<ul>
-														<li>Designed as a Progressive Web App to allow completion of questionnaires using tablets and phones.</li>
-														<li>Admin panel for GOSH staff to create and manage multiple questionnaires.</li>
-														<li>Page that provides patients access to questionnaires.</li>
-														<li>Database to store answers from questionnaires.</li>
-														<li>Deployment of the web-app on Heroku.</li>
-													</ul>
-												</li><br/>
-												<li>
-													<label><h5><b>Should Have:</b></h5></label> 
-													<ul>
-														<li>Separation of questionnaires aimed at different age groups and patient types (e.g. inpatients, outpatients).</li>
-														<li>Uncomplicated UI to allow design of questionnaires of users who do not have a background in computer science.</li>
-														<li>Simple design and UI for patients answering questionnaires.</li>
-														<li>User authentication for GOSH DRIVE admins using the web app.</li>
-														<li>Acceptance of different types of answers for the questionnaire designs e.g. drop-down, MCQ, sliders, text.</li>
-													</ul>
-												</li><br>
-												<li>
-													<label><h5><b>Could Have:</b></h5></label> 
-													<ul>
-														<li>Different UI designs for different patient age groups answering questionnaires.</li>
-														<li>Statistics to analyze general data about existing questionnaires.</li>
-														<li>Statistics to analyse the answers obtained from questionnaires e.g. trends, patterns, etc.</li>
-													</ul>
-												</li><br>
-												<li>
-													<label><h5><b>Won't Have:</b></h5></label> 
-													<ul>
-														<li>Usage of separate frameworks for mobile and web development.</li>
-														<li>Log-in system for patients answering questionnaires.</li>
-														<li>Multilingual surveys.</li></ul></li><br>
-											</ul>
-										</div>
+								<div class="arlo_tm_about_wrap">
+									<div class="author_wrap">
+										<table id="moscow_list">
+											<tr><th><b>Must Have:</b></th></tr>
+											<tr><td>Designed as a <b>Progressive Web App</b> to allow completion of questionnaires using tablets and phones.</td></tr>
+											<tr><td><b>Admin panel</b> for GOSH staff to create and manage multiple questionnaires.</td></tr>
+											<tr><td>Page that provides patients access to questionnaires.</td></tr>
+											<tr><td><b>Database</b> to store answers from questionnaires.</td></tr>
+											<tr><td>Deployment of the web-app on <b>Heroku</b>.</td></tr>
+
+											<tr><th><b>Should Have:</b></th></tr>
+											<tr><td>Separation of questionnaires aimed at different age groups and patient types (e.g. inpatients, outpatients).</td></tr>
+											<tr><td>Uncomplicated <b>UI</b> to allow design of questionnaires of users who do not have a background in computer science.</td></tr>
+											<tr><td>Simple design and UI for patients answering questionnaires.</td></tr>
+											<tr><td>User <b>authentication</b> for GOSH DRIVE admins using the web app.</td></tr>
+											<tr><td>Acceptance of different types of answers for the questionnaire designs e.g. drop-down, MCQ, sliders, text.</td></tr>
+
+											<tr><th><b>Could Have:</b></th></tr>
+											<tr><td>Different UI designs for different patient age groups answering questionnaires.</td></tr>
+											<tr><td><b>Statistics</b> to analyze general data about existing questionnaires.</td></tr>
+											<tr><td><b>Statistics</b> to analyse the answers obtained from questionnaires e.g. trends, patterns, etc.</td></tr>
+
+											<tr><th><b>Won't Have:</b></th></tr>
+											<tr><td>Usage of separate frameworks for mobile and web development.</td></tr>
+											<tr><td>Log-in system for patients answering questionnaires.</td></tr>
+											<tr><td>Multilingual surveys.</td></tr>					
+										</table>
 									</div>
 								</div>
 							</div>
@@ -318,7 +323,7 @@
 						<div class="container">
 							<div class="arlo_tm_title_holder news">
 								<h3>Personas and Use Cases</h3>
-								<span>We also came up with a few personas representing users of our web-app along with use cases to visualize usage of our web app.</span></div>
+								<span>Personas representing users of our web-app and Use Cases.</span></div>
 							<div class="arlo_tm_list_wrap blog_list">
 								<ul class="total">
 									<li class="wow fadeInUp" style="width: 95%; float: centre" data-wow-duration="1.2s">
@@ -378,7 +383,7 @@
 									<li class="wow fadeInUp" style="width: 48%" data-wow-duration="1.2s" data-wow-delay="0.2s">
 										<div class="inner_list">
 											<div class="image_wrap">
-												<img class="small" src="img/new/usecaselist.png" alt="" height="580" width="500"/>
+												<img class="small" src="img/new/usecaselist.png" alt="" height="580" width="750"/>
 												<img class="big" src="img/new/usecaselist.png" alt="" />
 											<div class="definitions_wrap">
 												<div class="date_wrap">
@@ -396,44 +401,78 @@
 				</div>
 				<!-- /PERSONA -->
 
-				<!-- Related Technologies -->
+				<!-- Research -->
 				<div class="arlo_tm_section" id="research">
 					<div class="arlo_tm_services_wrap">
 						<div class="container">
 							<div class="arlo_tm_title_holder">
-								<h3>Related Technologies:</h3>
-								<span>As our application is a new full-stack application, we decided to choose separate frameworks for front-end development and back-end development. After doing spending time learning about these frameworks, we have narrowed down our choices:</span>							</div>
+								<h3>Research</h3>
+								<span>Related Frameworks, Technologies, and Projects</span>
+							</div>
+
+							<!-- Related Technologies -->
+							<h2>Related Technologies</h2><br>
+							<p>Since our application is a completely new web-application, it was important for us to do some research on the various frameworks 
+								and libraries to be used on our web-app. The frameworks that we have researched have their own advantages and disadvantages,
+								but after spending more time learning about these frameworks, we have narrowed them down to a few choices that
+								suited our needs:</p><br>
 							<div class="list_wrap">
 								<ul>
 									<li>
-										<div class="inner">
+										<div class="inner" style="background-color: whitesmoke;">
 											<div class="icon">
-												<img class="svg" src="img/svg/camera-diaphragm.svg" alt="" />											</div>
+												<img class="svg" src="img/svg/django.svg" alt="" /></div>
 											<div class="title_service">
 												<h3>Django</h3>
 											</div>
 											<div class="text">
-												<p>Django is a Python framework which follows the model-template-view pattern and was recommended by our clients. In practice, we found it to have many built-in features such as a front-end administration panel, database mapping, and easy authentication [1]. However, time is required to get started to learn the basic Django boilerplate and structure.</p>
+												<p>Django is a Python framework which follows the model-template-view pattern. 
+													In practice, we found it to have many built-in features such as a back-end administration panel UI, easy 
+													database mapping, and easy authentication [1]. <br><br>
+													
+													Django's <b>ORM</b> (object-relational mapping) layer handles database migrations very elegently, using Models to create 
+													tables instead of requiring users to use SQL directly [6]. Since 
+													we are required to store survey data in a database, this feature could be very helpful.<br><br>
+													
+													Another advantage of using Django is that it is very <b>secure</b> [6]. This web framework provides protections against
+													XSS and CSRF attacks, SQL injections, clickjacking and many more.<br><br>
+													
+													For its downsides, time is required to get started to learn the basic Django boilerplate and structure, and Django
+												    can also come across as a little bit <b>monolithic</b>.</p><br>
 											</div>
 										</div>
 									</li>
 									<li>
-										<div class="inner">
+										<div class="inner" style="background-color: whitesmoke;">
 											<div class="icon">
-												<img class="svg" src="img/svg/new-tab.svg" alt="" />											</div>
+												<img class="svg" src="img/svg/new-tab.svg" alt="" /></div>
 											<div class="title_service">
 												<h3>Flask</h3>
 											</div>
 											<div class="text">
-												<p>Flask is a light-weight Python framework that is easier to get started with. However, it offers much less built 
-													in functionality than Django, and requires developers to be flexible [1] to make the best design decisions. 
-													It is easy to get started in developing a REST API in Flask, but functionalities such as authentication is much harder to be 
-													implemented in the future. </p>
+												<p>Flask is a light-weight Python microframework that is easier to get started with. It is unopinionated, and 
+													allows the developers to implement things using their own methods. It is easy to get started in developing a REST API 
+													in Flask [7]. <br><br>
+													
+													One advantage of using Flask is that it allows for a <b>good learning experience</b> as it forces us to
+													truly understand our code implementation due to its flexibility.<br><br>
+
+													Besides that, Flask also has great <b>performance</b>, due to it being a micro framework. It is more "low-level" than
+													Django, and contains fewer layers of abstraction between the web application and the database and HTTP requests.<br><br>
+													
+													However, it offers much less built-in functionality than Django, and requires developers to be <b>flexible</b> [1] to 
+													make the best design decisions. Functionalities such as authentication is much harder to be 
+													implemented in the future.</p>
 											</div>
 										</div>
 									</li>
+								</ul>
+							</div>
+
+							<div class="list_wrap">
+								<ul>		
 									<li>
-										<div class="inner">
+										<div class="inner" style="background-color: whitesmoke;">
 											<div class="icon">
 												<img class="svg" src="img/svg/layers.svg" alt="" /></div>
 											<div class="title_service">
@@ -451,7 +490,7 @@
 										</div>
 									</li>
 									<li>
-										<div class="inner">
+										<div class="inner" style="background-color: whitesmoke;">
 											<div class="icon">
 												<img class="svg" src="img/svg/share.svg" alt="" /></div>
 											<div class="title_service">
@@ -471,97 +510,128 @@
 								</ul>
 							</div>
 							<br>&nbsp;
+
 							<div class="leftbox">
 								<div class="arlo_tm_mini_title_holder">
-									<h4>Back-end decision:</h4>
+									<h4>Back-End Decision:</h4>
 								</div>
 								<p>We have decided to use Django over Flask despite its steeper initial learning curve. 
 									This is because we believe Django lets us focus on the actual questionnaire designs in the long run, 
 									as a lot of functionality such as authentication and database management is already built-in. 
 									We also think that Flask may introduce many bugs in the future due to our inexperience in back-end development so far.</p>
 							</div>
+
 							<br><br>
 							<div class="rightbox">
 								<div class="arlo_tm_mini_title_holder">
-									<h4>Front-end decision:</h4>
+									<h4>Front-End Decision:</h4>
 								</div>
-								<p>Both frameworks were reasonable to us, but we decided to choose React as our front-end JavaScript framework in the end. 
+								<p>Both frameworks were reasonable to us, but we decided that React was the best choice as our front-end JavaScript framework in the end. 
 									Despite having a steeper learning curve, we decided that the ‘create-react-app’ package can help us overcome this problem. 
-									The service workers also prove to be an advantage, as offline usage is an important property of a progressive web app.</p>
-							</div>
+									The service workers also prove to be an advantage for developing a progressive web app.</p>
+							</div><br><br>
+							<!-- /Related Technologies -->
+
+							<!-- Related Projects-->
+							<div class="list_wrap">
+								<hr style="border-top: 1px solid #a6a6a6;"><br>
+								<h2>Related Projects</h2><br>
+								<ul>		
+									<li>
+										<div class="inner" style="background-color: #f8f8f8;">
+											<div class="icon">
+												<img class="svg" src="img/svg/camera-diaphragm.svg" alt="" /></div>
+											<div class="title_service">
+												<a href="https://www.surveymonkey.com/"><h3>Survey Monkey</h3></a>
+											</div>
+											<div class="text">
+												<p>Survey Monkey is a website designed particularly for admins to design questionnaires. 
+													It is written in Python and developed with the .NET framework.
+													It offers a wide range of functionalities, including functionalities to import questionnaires from templates, 
+													analyse results, and obtain verified responses for your questionnaires.</p><br>
+												<p>It is very similar to our project, Hospital Surveys, as it allows for questionnaires that are highly customizable[4]. 
+													However, not all of these functionalities will be implemented, as many of these features are outside the scope of our project.</p>
+											</div>
+										</div>
+									</li>
+
+									<li>
+										<div class="inner" style="background-color: #f8f8f8;">
+											<div class="icon">
+												<img class="svg" src="img/svg/camera-diaphragm.svg" alt="" /></div>
+											<div class="title_service">
+												<a href="https://www.google.co.uk/forms/about/"><h3>Google Forms</h3></a>
+											</div>
+											<div class="text">
+												<p>Google forms is also designed for users to design questionnaires, 
+													and for users to respond to these questionnaires easily[5] and efficiently.
+													Google Forms allows for admins to design questionnaires to obtain responses in a short amount of time. 
+													Due to its popularity, users are able to obtain a large amount of responses easily.</p><br>
+												<p>In our project, we plan to implement the simple UI design for users to design questionnaires, 
+													but we require more detailed ways to process the data from the responses obtained, i.e. through a database. </p>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div><br>
+							
+							<h3>Conclusion</h3><br>
+							<h7>Google Forms offers less customization and functionality than Survey Monkey but is much more user-friendly. 
+								On the other hand, Survey Monkey is more focused on the questionnaires itself, and places more emphasis on the users creating the questionnaires. 
+								They both have their own merits. Google Forms' <b>straight-forward</b> UI and Survey Monkey's <b>customizability</b> were both great features to have for our web-app.
+							</h7>
+							<!--/ Related Projects-->
 						</div>
+						
 					</div>
 				</div>
 				<!-- /Related Technologies -->
-				<br>
 
-				
-
-				<!-- Related Projects -->
+				<!-- Development Dilemma -->
 				<div class="arlo_tm_section" id="related_projects">
 					<div class="arlo_tm_skills_wrap">
 						<div class="container">
 							<div class="arlo_tm_title_holder">
-								<h3>Related Projects:</h3>
-								<span>Our research on projects similar to Hospital Surveys</span>
+								<h3>Development Dilemma</h3>
+								<span>How We Arrived at Our Solution</span>
 							</div>
 							
-							<div class="arlo_tm_section" >
-								<div class="arlo_tm_services_wrap">
-									<div class="container">
-										<br>
-										<div class="list_wrap">
-											<ul>
-												<li>
-													<div class="inner">
-														<div class="icon">
-															<img class="svg" src="img/svg/camera-diaphragm.svg" alt="" /></div>
-														<div class="title_service">
-															<a href="https://www.surveymonkey.com/"><h3>Survey Monkey</h3></a>
-														</div>
-														<div class="text">
-															<p>Survey Monkey is a website designed particularly for admins to design questionnaires. 
-																It is written in Python and developed with the .NET framework.
-																It offers a wide range of functionalities, including functionalities to import questionnaires from templates, 
-																analyse results, and obtain verified responses for your questionnaires.</p><br>
-															<p>It is very similar to our project, Hospital Surveys, as it allows for questionnaires that are highly customizable[4]. 
-																However, not all of these functionalities will be implemented, as many of these features are outside the scope of our project.</p>
-														</div>
-													</div>
-												</li>
+							<h4>App Development: Two Approaches</h4><br>
+							<p><b>We had two approaches in developing the web application:</b> <br>
+								<b>a)</b> We could develop the web-app using a <b>stand-alone Python</b> library such as Django that can also handle template rendering.<br>
+								<b>b)</b> We could use <b>separate frameworks</b> for back-end and front-end development, with a Javascript front-end consuming a Python back-end REST API.<br>
+								Thus, we decided to do compare the advantages of both approaches.<br>
+							</p><br>
 
-												<li>
-													<div class="inner">
-														<div class="icon">
-															<img class="svg" src="img/svg/camera-diaphragm.svg" alt="" /></div>
-														<div class="title_service">
-															<a href="https://www.google.co.uk/forms/about/"><h3>Google Forms</h3></a>
-														</div>
-														<div class="text">
-															<p>Google forms is also designed for users to design questionnaires, 
-																and for users to respond to these questionnaires easily[5] and efficiently.
-																Google Forms allows for admins to design questionnaires to obtain responses in a short amount of time. 
-																Due to its popularity, users are able to obtain a large amount of responses easily.</p><br>
-															<p>In our project, we plan to implement the simple UI design for users to design questionnaires, 
-																but we require more detailed ways to process the data from the responses obtained, i.e. through a database. </p>
-														</div>
-													</div>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</div>
-							
-							<h3>Conclusion</h3><br>
-							<p>Google Forms offers less customization and functionality than Survey Monkey but is much more user-friendly. 
-								On the other hand, Survey Monkey is more focused on the questionnaires itself, and places more emphasis on the users creating the questionnaires. 
-								They both have their own merits. Google Forms' <b>straight-forward</b> UI and Survey Monkey's <b>customizability</b> were both great features to have for our web-app.
+							<table id="dilemma">
+								<tr><th><b>Using Stand-Alone Django (Or other frameworks):</b></th></tr>
+								<tr><td><b>+ Time saving:</b><br>
+								Django provides templates for rendering views, so developers are not required to code the front-end manually.</td></tr>
+								<tr><td><b>+ Convenience:</b>
+								Features such as form validation and rendering may be more convenient to implement without a front-end framework. [9]</td></tr>
+									
+
+								<tr><th><b>Back-end REST API with JavaScript Front-End:</b></th></tr>
+								<tr><td><b>+ Decoupling / Separation of Concerns [8]: </b> <br>
+										Separate front-end and back-end frameworks allows us to split our work easily and evenly between 
+										front-end and back-end developers, preventing interference [9], which is a great software engineering practice.
+								</td></tr>
+								<tr><td><b>+ Dynamic / Interactive User Interface:</b><br>
+										Many JavaScript front-end frameworks allow for more dynamic and interactive UIs, leading to the 
+										final web-app looking more elegant and eye-catching.</td></tr>
+								<tr><td><b>+ Web-App Performance:</b><br> 
+										A separate JavaScript front-end can render separately from the server, only reloading the page when necessary,
+										when it is required to fetch data. Overall, this improves the performance of the web-app.</td></tr>
+							</table>
+							<br>
+							<h4>Conclusion:</h4><br>
+							<p>While it is convenient not to use a front-end framework, the team agreed that using one would allow for a better
+								learning experience and an overall higher quality web-app. Thus, we <b>decided to use one</b>.
 							</p>
 						</div>
 					</div>
 				</div>
-				<!-- /Related Projects -->
+				<!-- /Development Dilemma -->
 
 				<!-- Research References -->
 				<div class="arlo_tm_section">
@@ -572,31 +642,55 @@
 									<div class="arlo_tm_mini_title_holder">
 										<h3>Research References:</h3>
 									</div><br>&nbsp;
-									<p style="padding-left: 2%;">
+									<p>
 										<b>Flask vs Django</b><br>
 										[1] Mindfire Solutions, “Flask vs Django“<br>
-										Available: <a href="http://www.mindfiresolutions.com/blog/2018/05/flask-vs-django/">http://www.mindfiresolutions.com/blog/2018/05/flask-vs-django/</a><br>
+										Available: <a href="http://www.mindfiresolutions.com/blog/2018/05/flask-vs-django/">
+											http://www.mindfiresolutions.com/blog/2018/05/flask-vs-django/</a><br>
 										[Accessed: Oct 20, 2019]<br>
 										<br>
 										<b>React vs. Vue</b><br>
 										[2] Yogev Ahuvia, “React vs. Vue (vs. Angular)”<br>
-										Available: <a href="https://medium.com/fundbox-engineering/react-vs-vue-vs-angular-163f1ae7be56">https://medium.com/fundbox-engineering/react-vs-vue-vs-angular-163f1ae7be56</a><br>
+										Available: <a href="https://medium.com/fundbox-engineering/react-vs-vue-vs-angular-163f1ae7be56">
+											https://medium.com/fundbox-engineering/react-vs-vue-vs-angular-163f1ae7be56</a><br>
 										[Accessed:  Oct 21, 2019]<br>
 										<br>
 										<b>Progressive Frameworks and Service Workers</b><br>
 										[3] Ian Sutherland, “Making a Progressive Web App”<br>
-										Available: <a href="https://create-react-app.dev/docs/making-a-progressive-web-app/">https://create-react-app.dev/docs/making-a-progressive-web-app/</a><br>
+										Available: <a href="https://create-react-app.dev/docs/making-a-progressive-web-app/">
+											https://create-react-app.dev/docs/making-a-progressive-web-app/</a><br>
 										[Accesssed: Nov. 24, 2019]<br>
 										<br>
-										<b>Customization on Survey Monkey</b><br>
+										<b>Customization of Survey Monkey</b><br>
 										[4] Laura McPherson, "Survey Maker Showdown: Google Forms vs. Survey Monkey"<br>
-										Available: <a href="https://zapier.com/blog/google-forms-vs-surveymonkey/">https://zapier.com/blog/google-forms-vs-surveymonkey/</a><br>
+										Available: <a href="https://zapier.com/blog/google-forms-vs-surveymonkey/">
+											https://zapier.com/blog/google-forms-vs-surveymonkey/</a><br>
 										[Accessed: Nov. 3, 2019]<br>
 										<br>
 										<b>Easy Usage of Google Forms</b><br>
 										[5] Ben Beck, "Head-to-Head Review: Google Forms vs. SurveyMonkey vs. Typeform"<br>
-										Available: <a href="https://www.clearvoice.com/blog/head-to-head-review-google-forms-vs-surveymonkey-vs-typeform/">https://www.clearvoice.com/blog/head-to-head-review-google-forms-vs-surveymonkey-vs-typeform/</a><br>
+										Available: <a href="https://www.clearvoice.com/blog/head-to-head-review-google-forms-vs-surveymonkey-vs-typeform/">
+											https://www.clearvoice.com/blog/head-to-head-review-google-forms-vs-surveymonkey-vs-typeform/</a><br>
 										[Accessed: Nov 5, 2019]<br>
+										<br>
+										<b>Web App Development using JavaScript and Django</b><br>
+										[6] Oyetoke Tobi Emmanuel, "Building Future Web Apps With JavaScript and Django"<br>
+										Available: <a href="https://medium.com/fbdevclagos/building-future-web-apps-with-javascript-and-django-c831883b22cf">
+											https://medium.com/fbdevclagos/building-future-web-apps-with-javascript-and-django-c831883b22cf</a><br>
+										[Accessed: Nov. 6, 2019]<br>
+										<br>
+										<b>Flask Advantages</b><br>
+										[7] Gareth Dwyer, "Flask vs. Django: Why Flask Might Be Better"<br>				
+										Available: <a href="https://www.codementor.io/@garethdwyer/flask-vs-django-why-flask-might-be-better-4xs7mdf8v">
+											https://www.codementor.io/@garethdwyer/flask-vs-django-why-flask-might-be-better-4xs7mdf8v</a><br>
+										[Accessed: Nov 6, 2019]<br>
+										<br>
+										<b> Advantages of using a JavaScript Framework</b><br> 
+										[8] Vladislav Supalov, "When and Why Would I Need a JS Framework for Django?"<br>
+										Avalailable: <a href="https://vsupalov.com/when-and-why-js-framework-for-django/">
+											https://vsupalov.com/when-and-why-js-framework-for-django/</a><br>
+										[Accessed: Nov 9, 2019]<br>
+										[9]https://vsupalov.com/do-i-need-to-combine-django-with-vue-or-react/
 									</p>
 								</div>
 								<br><br>
@@ -644,62 +738,16 @@
 													</div>
 												</div>
 											</div>
+										</div>
 									</li>
 								</ul>
 							</div>
 							<br>
-							<!-- KNOWN BUGS -->
-							<div class="arlo_tm_section" >
-								<div class="arlo_tm_services_wrap">
-									<div class="container">
-										<br>
-										<div class="arlo_tm_mini_title_holder">
-											<h2><b>Known Bugs</b></h2>
-										</div><br>&nbsp;
-										<div class="list_wrap">
-											<ul>
-												<li>
-													<div class="inner">
-														<div class="icon">
-															<img class="svg" src="img/svg/camera-diaphragm.svg" alt="" /></div>
-														<div class="title_service">
-															<h3>Front-End</h3>
-														</div>
-														<div class="text">
-															<ul>
-																<li><b>Priority: HIGH</b><br>New Questionnaires still cannot be posted into the back-end database.</li>
-																<li><b>Priority: MEDIUM</b><br>Amount of selections for multiple choice questions cannot be changed.</li>
-																<li><b>Priority: LOW</b><br>Navigation links are still mostly not directing to the right wbe pages.</li>
-															</ul>
-														</div>
-													</div>
-												</li>
-												<li>
-													<div class="inner">
-														<div class="icon">
-															<img class="svg" src="img/svg/new-tab.svg" alt="" /></div>
-														<div class="title_service">
-															<h3>Back-End</h3>
-														</div>
-														<div class="text">
-															<ul>
-																<li><b>Priority: HIGH</b><br>Have not developed the function for editing the questionnaires.</li>
-																<li><b>Priority: HIGH</b><br>Have not developed the function for deleting the questionnaires.</li>
-															</ul>
-														</div>
-													</div>
-												</li>
-
-											</ul>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- KNOWN BUGS -->
+							
 
 							<!--Implementation-->
 							<div class="arlo_tm_section" >
-								<div class="arlo_tm_services_wrap">
+								<div class="arlo_tm_services_wrap" style="background-color: white;">
 									<div class="container">
 										<br>
 										<h2><b>Implementation of Finished Functionalities</b></h2>
@@ -733,7 +781,7 @@
 
 				<!-- HCI -->
 				<div class="arlo_tm_section relative" id="portfolio">
-					<div class="arlo_tm_portfolio_wrapper_all">
+					<div class="arlo_tm_portfolio_wrapper_all" style="background-color: #ecf2f8;">
 						<!-- PORTFOLIO FILTER -->
 						<div class="arlo_tm_second_portfolio">
 						<div class="container">
