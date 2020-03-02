@@ -394,7 +394,7 @@ img.svg{
 	height: auto;
 	clear: both;
 	float: left;
-	margin-bottom: 100px;
+	margin-bottom: 70px;
 	
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
 	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
@@ -574,7 +574,7 @@ img.svg{
 	clear: both;
 	float: left;
 	text-align: left;
-	padding-bottom: 60px;
+	padding-bottom: 50px;
 	position: relative;
 	
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
@@ -883,8 +883,8 @@ img.svg{
 }
 .arlo_tm_skills_wrap{
 	background-color: #f6f7fd;
-	padding: 90px 0px;
-	margin-bottom: 100px;
+	padding: 70px 0px;
+	margin-bottom: 70px;
 }
 .arlo_tm_skills_wrap .inner_wrap{display: flex;}
 .arlo_tm_skills_wrap .leftbox{
@@ -1492,10 +1492,10 @@ img.svg{
 	height: auto;
 	clear: both;
 	float: left;
-	padding-top: 98px;
+	padding-top: 70px;
 	padding-bottom: 70px;
 	background-color: #f6f7fd;
-	margin-bottom: 100px;
+	margin-bottom: 70px;
 	
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
 	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
@@ -2338,7 +2338,7 @@ img.svg{
     font-weight: 500;
     letter-spacing: -.5px;
     line-height: 1;
-	margin-bottom: 100px;
+	margin-bottom: 70px;
 }
 .arlo_tm_portfolio_single_wrap .details_wrap{
 	width: 100%;
@@ -2347,7 +2347,7 @@ img.svg{
 	float: left;
 	display: flex;
 	flex-direction: row;
-	margin-bottom: 100px;
+	margin-bottom: 70px;
 	
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
 	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
