@@ -78,7 +78,8 @@
 #moscow_list tr:hover {background-color: #ddd;}
 
 #moscow_list th {
-	padding-left: 30px;
+	padding-left: 15px;
+	padding-right: 15px;
 	padding-top: 12px;
 	padding-bottom: 12px;
 	text-align: left;
@@ -87,7 +88,8 @@
 }
 
 #moscow_list td {
-	padding-left: 30px;
+	padding-left: 15px;
+
 }
 
 /*	01) ARLO BASE
@@ -472,7 +474,7 @@ img.svg{
 .arlo_tm_universal_box_wrap .content.hero{height: 100vh;}
 .arlo_tm_hero_header_wrap .inner_content{
 	position: absolute;
-	top: 50%;
+	top: 57%;
 	left: 50%;
 	transform: translate(-50%,-50%);
 	z-index: 2;
@@ -700,7 +702,7 @@ img.svg{
 	height: auto;
 	clear: both;
 	float: left;
-	padding-bottom: 122px;
+	padding-bottom: 50px;
 	position: relative;
 	margin-top: -6px;
 	
