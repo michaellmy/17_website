@@ -92,6 +92,13 @@
 
 }
 
+#shell_box {
+	padding: 10px 0 10px 15px; 
+	margin-bottom: 15px; 
+	background-color: #e6e6e6;
+	border-radius: 15px
+}
+
 /*	01) ARLO BASE
 /*---------------------------------------------------*/
 html {
