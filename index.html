@@ -1306,7 +1306,9 @@
 									ourselves to obtain some questionnaire response data. This resulted in a rather <b>small sample size</b>, and may
 									be one of the compromises of using this algorithm. We implemented this algorithm by using the npm library 
 									<b><a href="https://www.npmjs.com/package/skmeans">skmeans</a></b>, which allowed us to calculate the clusters easily. 
-									However, due to shortage of time, we were only able to use this algorithm for uni-dimensional data (age).<br>&nbsp;<br>&nbsp;
+									<br><br>However, due to shortage of time, we were only able to use this algorithm for uni-dimensional data (age).
+									This is because multi-dimensional data was difficult to incorporate with Chart.js, and introduced some 
+									time complexity problems at the same time.<br>&nbsp;<br>&nbsp;
 
 									<h4 style="margin-bottom: 10px;">Experiment Results:</h4>
 									When implementing this algorithm, we had to choose the number of clusters (groups), <b>k</b>, to classify the data into. 
