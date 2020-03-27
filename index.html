@@ -853,7 +853,7 @@
 								</ul>
 							</div>
 							<br>&nbsp;<br>&nbsp;
-							<hr><br>
+							<hr style="border-top: 3px solid #204060;"><br>
 							<div class="inner_wrap">
 								<div class="total">
 									<div class="arlo_tm_title_holder news" id="design">
@@ -862,15 +862,15 @@
 									</div>
 									
 									<p>Shown below are the implementation of finished functionalities of Hospital Surveys, along with some code snippets and explanations of how we implemented these functionalities. 
-										Key functionalities are <b>bolded</b>.<p><br><hr><br>
+										Key functionalities are <b>bolded</b>.<p><br><hr style="border-top: 1px dotted grey;"><br>
 										
-									<h4>React Front-End</h4><br>
+									<h3>React Front-End</h3><br>
 
 									<p>
 										React.js is used as the front-end web framework for the <b>user interface</b> of our web-app, and is used to create all components
 										for the UI. React-Bootstrap and Ant Design are also used for their components, and helped in designing <b>responsive web designs.</b> 
-										The Axios library is used for HTTP requests to obtain data from our back-end <b>database</b>, mostly through GET and POST requests.<br>
-										Chart.js is used to plot <b>statistical</b> graphs and visualizations. Data displayed on graphs are obtained through HTTP requests to back-end as well.
+										The Axios library is used for HTTP requests to obtain data from our back-end <b>database</b>, mostly through GET and POST requests.<br><br>
+										Chart.js is used to plot <b>statistical</b> graphs and visualizations. Data displayed on graphs are alsp obtained through HTTP requests.
 									</p><br>
 									
 									<table id="moscow_list" >
@@ -898,7 +898,7 @@
 										<tr>
 											<td><b>Statistical Analysis</b></td>
 											<td>src/statistics/[components]</td>
-											<td>A Could Have. Allows users to view general statistics and visualizations about survey and response data.</td>
+											<td>A Could Have. Allows users to view and analyse general statistics and visualizations about survey and response data.</td>
 											<td>Not Required</td>
 										</tr>
 
@@ -978,12 +978,14 @@
 											</li>
 										</ul>
 									</div>
-									<hr><br>
-									<h4 style="padding-bottom: 15px;">Django Back-End</h4>
+									<br>&nbsp;
+
+									<hr style="border-top: 1px dotted grey;"><br>
+									<h3 style="padding-bottom: 15px;">Django Back-End</h3>
 									<p>
-										Django was used as the back-end server, following the Django boiler template. Django rest framework is used as to create a REST API back-end,
+										Django was used as the back-end server, following the Django boiler template. Django rest framework is used as to create a <b>REST API</b> back-end,
 										 which is used by the front-end through HTTP requests, providing and exchanging the data that needs to be displayed in the front-end UI.
-										 Data from the Django Models are stored in Heroku Postgres database, as shown and configured in the settings.py file.
+										 Data is stored in Heroku <b>Postgres database</b>, as shown and configured in the settings.py file.
 									</p><br>
 
 									<div class="arlo_tm_list_wrap blog_list">
@@ -1017,13 +1019,14 @@
 											</li>
 										</ul>
 									</div>
+									<br>&nbsp;
 									
-									<hr><br>
-									<h4 style="padding-bottom: 15px;">User <b>Authentication</b></h4>
+									<hr style="border-top: 1px dotted grey;"><br>
+									<h3 style="padding-bottom: 15px;">User <b>Authentication</b></h3>
 									<p>
-										Django's rest-auth library was used to generate a token for the front-end UI when users sign in. React Redux then stores this token 
-										for 60 minutes, along with its state in the browser. This creates a session that lasts for 60 minutes for users that have signed in
-										with the Django Admin credentials, and allows users to navigate to any web page requiring <b>authentication</b> during that time without signing in again.
+										Django's rest-auth library was used to generate a token for the front-end UI when users sign in using Django Admin credentials. 
+										React Redux then stores this token for 60 minutes in the browser. This creates a session that lasts for 60 minutes for users that have signed in, 
+										and allows users to navigate to any web page requiring <b>authentication</b> during that time without signing in again.
 									</p><br>
 
 									<div class="arlo_tm_list_wrap blog_list">
@@ -1056,10 +1059,10 @@
 											</li>
 										</ul>
 									</div>
-									<br><br>
+									<br>&nbsp;
 
-									<hr><br>
-									<h4 style="padding-bottom: 15px;">Web-App Hosting</h4>
+									<hr style="border-top: 1px dotted grey;"><br>
+									<h3 style="padding-bottom: 15px;">Web-App Hosting</h3>
 									<p>
 										The web-app is hosted and deployed on <b>Heroku</b>, as a Python app, rendering its content through a JavaScript front-end. This was done 
 										by specfying a Procfile, requirements.txt, and changing various Django settings in settings.py. This is done to specify the versions of used frameworks,
@@ -1098,8 +1101,7 @@
 									</div>
 
 								</div>
-							</div>
-									
+							</div>		
 						</div>
 					</div>
 				</div>
@@ -1185,6 +1187,12 @@
 												When adding new functionalities, we always made sure that these new funcionalities did not break
 												any existing functionalities.
 											</li>
+
+											<li style="padding-bottom: 10px;"><b>Usage of Virtual Environments:</b><br>
+												Virtual Environments proved to be very helpful, as it allows us to test dependencies and useful packages
+												without installing them within our devices, saving a lot of time and device memory.
+											</li>
+
 											<li style="padding-bottom: 10px;"><b>Leaving Time for Fixing:</b><br>
 												Before testing our functionalities, we also made sure that there was enough time for us to 
 												fix any broken code or functionalities after the testing process.
@@ -1252,8 +1260,23 @@
 							<div class="inner_wrap">
 								<div class="total">
 									<h3 style="padding-bottom: 15px;">Performance / Stress Testing</h3>
-									<p>Enter content here</p>
-								</div>
+									<p>Stress testing was used to test the performance of our web-app. There may be possibilities where 
+										admins need to manage <b>large number of questionnaires</b>, causing huge loads of data in the database.<br><br>
+										Thus, we tested the time taken for SQL queries in database tables with respect to number of rows in a test server.
+										The number of rows represents the size of questionnaire and survey data.
+									</p><br>
+									
+									<div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; padding: 0 0 35px 0;">
+										<img src=img/new/graphs/querytime.png width="48%" style="padding: 0 5px 0 5px"><br>&nbsp;
+										<img src=img/new/graphs/querytime2.png  width="48%" style="padding: 0 5px 0 5px"><br>&nbsp;
+									</div>
+
+									<h5 style="padding-bottom: 10px;">Conclusion</h3>
+									<p>Despite an increase in the number of rows, we found that there was an <b>insignificant increase</b> or variations in time taken for SQL queries.
+										Do note that the timings recorded are recorded from the pgAdmin interface, so the difference in time taken for 
+										between recordings for HTTP requests will be much smaller as well. 
+									</p>
+									</div>
 								<br><br>
 							</div>
 						</div>
@@ -1299,7 +1322,7 @@
 									The algorithm seems to perform the best when clustering our data into <b>2</b> clusters <b>(younger and older patients)</b>, which may be the optimal number in our case.
 									This may be due to our small sample size, as larger values of k may force the algorithm to cluster data with more 
 									uncertainty. Also, the algorithm <b>fails when the sample size is lower than k</b> (the number of clusters), which occurs when there are very fewe
-									responses to the surveys. Hence, in order to improve the performance of this algorithm or use larger values of k, the most direct
+									responses to the surveys.<br><br> Hence, in order to improve the performance of this algorithm or use larger values of k, the most direct
 									solution is to <b>provide a larger sample size</b>.
 
 								</div>
@@ -1359,7 +1382,7 @@
 									</li>
 								</ul>
 							</div>
-							<br>&nbsp;<hr><br>
+							<br>&nbsp;<br>&nbsp;<hr><br>
 							<div class="arlo_tm_about_wrap">
 								<h3>Project Evaluation</h3><br>
 								<div class="author_wrap">
@@ -1379,7 +1402,7 @@
 												The general UI of our web-app is generally quite pleasant to look at. 
 												Since we used design elements from React Bootstrap and Ant Design, the overall design looks very clean and is responsive.<br><br>
 												The UI is also easy to use, which is important for users with no background in computing, 
-												as we made sure not to crowd the UI with too many elements.<br>&nbsp;
+												as we made sure not to crowd the UI with too many elements.
 											</td>
 										</tr>
 
@@ -1390,7 +1413,7 @@
 											<td>
 												Our web app provides many functionalities to our users, including authentication, managing and answering surveys, viewing survey responses, 
 												and even generating statistics for analysis, storing all data in PostgreSQL. <br><br>More detailed functionalities such as file 
-												exporting or more survey answer options could be added in the future if given more time.<br>&nbsp;
+												exporting or more survey answer options could be added in the future if given more time.
 											</td>
 										</tr>
 
@@ -1401,7 +1424,7 @@
 											<td>
 												Our web app is generally quite stable, as all of our functionalities work fine, and this was tested using multiple stress tests. 
 												However, it is not completely prone to error due to factors such as JavaScript dependencies and Django migrations, 
-												which could raise issues during future development.<br>&nbsp;
+												which could raise issues during future development.
 											</td>
 										</tr>
 
@@ -1412,7 +1435,7 @@
 											<td>
 												Due to the nature of JavaScript front-end frameworks, pages don’t have to be reloaded unnecessarily as HTTP requests are quick. 
 												As such, our web app loads very quickly, and does not require users to wait much at all. 
-												This can be improved further by invoking service workers in the future, if we were given more time for development.<br>&nbsp;
+												This can be improved further by invoking service workers in the future, if we were given more time for development.
 
 											</td>
 										</tr>
@@ -1424,7 +1447,7 @@
 											<td>
 												Due to the responsive designs, the user experience should be good on almost every device. 
 												Bootstrap and Ant elements are also compatible with almost all browsers. 
-												Thus, the compatibility of our web-app with different devices and web browsers is high.<br>&nbsp;
+												Thus, the compatibility of our web-app with different devices and web browsers is high.
 											</td>
 										</tr>
 
@@ -1434,9 +1457,9 @@
 											<td><b>4/5</b></td>
 											<td>
 												During development, we used Git to maintain and keep track of changes to the code. This is useful for maintenance
-												the code as we can locate mistakes easily. Also, the separation of our React front-end and Django back-end practises
+												the code as we can locate mistakes easily. <br><br>Also, the separation of our React front-end and Django back-end practises
 												the 'separation of concerns' software development principle, allowing us to achieve easier maintenance as functionalities
-												do not overlap much, preventing interference.<br>&nbsp;
+												do not overlap much, preventing interference.
 											</td>
 										</tr>
 
@@ -1446,10 +1469,10 @@
 											<td><b>4/5</b></td>
 											<td>
 												We used many different tools to manage our time and available resources, including Bi-Weekly Reports, Gantt Charts, and 
-												Microsoft Teams. This allows us to keep track of the progress of our project.<br><br>
+												Microsoft Teams. This allows us to keep track of the progress of our project.<br>&nbsp;<br>
 
 												Also, we have a clear line between front-end and back-end development, and each team member can be assigned their own respective roles 
-												for easy project management, allowing developers to work on separate tasks efficiently.<br>&nbsp;
+												for easy project management, allowing developers to work on separate tasks efficiently.
 										</tr>	
 									</table>
 								</div><br>&nbsp;<br>&nbsp;<hr style="margin-bottom: 30px;">
@@ -1471,7 +1494,7 @@
 											<td><b>Additional Survey Customizability</b></td>
 											<td>
 												More customizability could be added to the overall look of the questionnaires.
-												GOSH admins may set the background image or colors of the survey forms, making them more appealing to child patients answering surveys.<br>&nbsp;
+												GOSH admins may set the background image or colors of the survey forms, making them more appealing to child patients answering surveys.
 											</td>
 										</tr>
 
@@ -1481,7 +1504,7 @@
 											<td><b>Increase Number of Answer Types.</b></td>
 											<td>
 												As of now, GOSH admins are able to choose between 3 expected answer types for each question on the surveys: Text Area, Multiple Choice Questions,
-												and Sliders. If we were given more time, we would add answer types such as checkboxes, date pickers, etc. to allow for more flexibilty.<br>&nbsp;
+												and Sliders. If we were given more time, we would add answer types such as checkboxes, date pickers, etc. to allow for more flexibilty.
 											</td>
 										</tr>
 
@@ -1491,7 +1514,7 @@
 											<td><b>OAuth Authentication / Separate Accounts</b></td>
 											<td>
 												We are currently using Django's rest-auth for authentication of the web-app. This creates a centralized system, in which all surveys are stored in.
-												We would like to use OAuth authentication, allowing separate accounts for users to store separate surveys. Users can also use accounts such as Gmail to log in.<br>&nbsp;
+												We would like to use OAuth authentication, allowing separate accounts for users to store separate surveys. Users can also use accounts such as Gmail to log in.
 											</td>
 										</tr>
 
@@ -1501,7 +1524,7 @@
 											<td><b>More Complex Statistical Analysis</b></td>
 											<td>
 												Currently, we are using one machine learning algorithm on our statistical analysis (Unsupervised K-Means Clustering) on patient ages. We would like
-												to add on to these algorithms, and create more complex and meaningful visualizations for more data analytics.<br>&nbsp;
+												to add on to these algorithms, and create more complex and meaningful visualizations for more data analytics.
 											</td>
 										</tr>
 									</table>
@@ -1524,7 +1547,8 @@
 
 									<h3>User Manual:</h3><br>
 									<h5 style="padding-bottom: 10px;">Accessing the Web-App:</h5>
-									<p style="padding-bottom: 10px;">To access the web-app, go to <b><i><a href="https://hospital-surveys-dev.herokuapp.com/">https://hospital-surveys-dev.herokuapp.com/</a></i></b><br>
+									<p style="padding-bottom: 10px;">To access a demo of the web-app, go to <b><i><a href="https://hospital-surveys-dev.herokuapp.com/">https://hospital-surveys-dev.herokuapp.com/</a></i></b>.
+									<br>
 									In order to manage questionanires in the admin panel (/manage), it is required to log in to the web-app.<br></p>
 									<b>
 										Admin Panel Username: team17<br>
@@ -1575,7 +1599,7 @@
 											<p><i>$ heroku run python manage.py createsuperuser</i></p>
 										</div>
 
-										The web app can now be found at <b>https://[heroku-project-name].herokuapp.com</b>. A postgres database will be attached to the web-app during deployment, 
+										The web app can now be found at <b>https://[heroku-project-name].herokuapp.com</b>. A Heroku Postgres database will be automatically attached to the web-app during deployment, 
 											and the credentials for the database can be found under the <b>Heroku Project -> Resources -> Add-ons -> Heroku Postgres -> Settings -> View Credentials</b>. 
 									</ol>
 									
@@ -1622,6 +1646,7 @@
 											<li><a href="reports/Report4.pdf">Report 4: 26 January 2020 – 7 February 2020</a></li>
 											<li><a href="reports/Report5.pdf">Report 5: 7 February 2020 – 28 February 2020</a></li>
 											<li><a href="reports/Report6.pdf">Report 6: 28 Frebruary 2020 – 13 March 2020</a></li>
+											<li><a href="reports/Report7.pdf">Report 7: 14 March 2020 – 27 March 2020</a></li>
 										</ul>
 									</p>
 								</div>
