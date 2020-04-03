@@ -137,10 +137,13 @@
 								<h3>Home</h3>
 								<span>About Hospital Surveys</span></div>
 							
-							<h3 style="padding-bottom: 20px;"><b>Introducing: Hospital Surveys</b></h3>
+							<h3 style="padding-bottom: 20px;"><b>Introducing: <a href="https://hospital-surveys-dev.herokuapp.com" style="color: #003366;">
+								Hospital Surveys</a></b>
+							</h3>
+
 							<div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; padding: 0 0 30px 0;">
-								<img src=img/about/motivation2.jpg width="47%" style="padding: 0 5px 0 5px"><br>&nbsp;
-								<img src=img/about/motivation.jpg width="47%" style="padding: 0 5px 0 5px"><br>&nbsp;
+								<img src=img/about/motivation2.jpg width="45%" style="padding: 0 15px 15px 15px"><br>&nbsp;
+								<img src=img/about/motivation.jpg width="45%" style="padding: 0 15px 15px 15px"><br>&nbsp;
 							</div>
 
 							<div class="inner_wrap">
@@ -148,45 +151,64 @@
 									<div>
 										<h4>Our Motivations:</h4><br>
 										<h6 style="padding-bottom: 5px;"><b>Hear the voices of these children.</b></h6>
-										<p> We believe it is crucial for child patients of Great Ormond Street Hospital to be able to provide feedback based on 
+										<p> We believe it is crucial for child patients from hospitals to be able to provide feedback based on 
 											their experiences. Whether it be hospital facilities, the way patients are treated, 
 											or just the overall experience, feedback not only allows children to 
-											share their experiences, but can also help improve hospital services in the future. </p><br>
-										<h6 style="padding-bottom: 5px;"><b>Hospital Surveys - Our Solution.</b></h6>
-											Thus, we have developed Hospital Surveys, an online survey tool that that allows child patients to answer surveys to 
-											provide feedback anonymously. We aspire to eliminate
+											share their experiences, but also help improve hospital services in the future. </p><br>
+											
+										<h6 style="padding-bottom: 5px; padding-top: 10px;"><b>Hospital Surveys - Our Solution.</b></h6>
+											Thus, we have developed Hospital Surveys, an online survey tool that allows hospital staff to design surveys, 
+											then allowing child patients to answer these surveys to provide feedback anonymously. We aspire to eliminate
 											the need for filling paper forms manually, while providing child patients a safe space to express themselves.
 										</p>
 									</div>
 								</div> 
 							</div>
+
 							<br>&nbsp;
 							<hr></h>
 							<br>&nbsp;
+
 							<div class="inner_wrap">
+										
+								
 								<div class="leftbox">
+									<div class="arlo_tm_mini_title_holder">
+										<h4>Introductory Video:</h4>
+									</div>
+									<video width="100%" controls>
+										<source src="video/17_video.mp4" type="video/mp4">
+									</video>
+								</div>
+
+								<div class="rightbox" style="">
 									<div class="arlo_tm_mini_title_holder">
 										<h4>Project Abstract:</h4>
 									</div>
-									<p>Hospital Surveys is an online survey tool for hospitals. Surveys are designed by 
-										hospital staff using a web application and delivered to patients using a progressive 
-										web app. A database stores the anonymised patient feedback, which can be exported for 
-										further analysis.</p>
+									<span>Hospital Surveys is an online survey tool for hospitals. Surveys are designed by 
+										hospital staff using a web application, and these surveys can be delivered to patients using a progressive 
+										web app. <br><br>A database stores the anonymised patient feedback and survey data, which can be exported for 
+										further analysis. Graphical visualisations also help analyze data from surveys and their responses.
+									</span>
 								</div>
-								<div class="rightbox" >
+							</div>
+
+							<br>&nbsp;<br>&nbsp;
+
+							<div class="inner_wrap">
+								<div class="total">
 									<div class="arlo_tm_mini_title_holder">
 										<h4>Key Features:</h4>
 									</div>
 									<ul style="padding-left: 20px">
-										<li>Progressive Web Application.</li>
-										<li>App allows admins to design, create, and manage questionnaires stored in a database, 
-											in turn allowing child patients to answer these questionnaires.</li>
-										<li>Data analysis of questionnaire data and responses</li>
-										<li>Django back-end REST API, rendered with a React JS front-end User Interface.</li>
-										<li>Web app is hosted on Heroku.</li>		
+										<li>Progressive Web Application, to allow completion of questionnaires on <b>mobile devices</b>.</li>
+										<li><b>Admin panel</b> that allows admins to design, create, and manage questionnaires.</li>
+										<li>Statistical <b>visualisations</b> of questionnaire data and responses.</li>
+										<li>Django back-end REST API, rendered by a React.js front-end User Interface.</li>
+										<li>Questionnaire data and responses stored in <b>PostgreSQL</b>.</li>
+										<li>Web app is deployed on <b>Heroku</b>.</li>		
 									</ul>
-								</div>
-							</div>
+								</div>						
 							</div>
 						</div>
 					</div>	
@@ -209,7 +231,7 @@
 											</div>
 											<div class="text">
 												<p><a href="min.lau.18@ucl.ac.uk">min.lau.18@ucl.ac.uk</a><br>
-													<strong>Roles:</strong> Front-End Developer, Website Coder/Writer, Project Partner Liaison, Video Editor</p>
+													<strong>Roles:</strong> <b>Team Leader</b>, Front-End Developer, Website Coder/Writer, Video Editor</p>
 											</div>
 										</div>
 									</li>
@@ -240,6 +262,8 @@
 							<br>
 						</div>
 					</div>
+				</div>
+
 
 				<!-- REQUIREMENTS -->
 				<div class="arlo_tm_section relative" >
@@ -283,6 +307,7 @@
 					</div>
 				</div>
 				<!-- /REQUIREMENTS -->
+
 				<!-- MOSCOW -->
 				<div class="arlo_tm_section relative" id="moscow">
 					<div class="arlo_tm_about_wrapper_all">
@@ -294,30 +319,30 @@
 								<h6>We came up with a list of requirements after agreements with our project partners.</h6><br>
 								<div class="arlo_tm_about_wrap">
 									<div class="author_wrap">
-										<table id="moscow_list" style="margin-left: 30px; margin-right: 30px;">
+										<table id="moscow_list" >
 											<tr><th><b>Must Have:</b></th></tr>
-											<tr><td>Designed as a <b>Progressive Web App</b> to allow completion of questionnaires using tablets and phones.</td></tr>
-											<tr><td><b>Admin panel</b> for GOSH staff to create and manage multiple questionnaires.</td></tr>
-											<tr><td>Page that provides patients access to questionnaires.</td></tr>
-											<tr><td><b>Database</b> to store answers from questionnaires.</td></tr>
-											<tr><td>Deployment of the web-app on <b>Heroku</b>.</td></tr>
+											<tr><td>1) Designed as a <b>Progressive Web App</b> to allow completion of questionnaires using tablets and phones.</td></tr>
+											<tr><td>2) <b>Admin panel</b> for GOSH staff to create and manage multiple questionnaires.</td></tr>
+											<tr><td>3) Page that provides patients access to questionnaires.</td></tr>
+											<tr><td>4) <b>Database</b> to store answers from questionnaires.</td></tr>
+											<tr><td>5) Deployment of the web-app on <b>Heroku</b>.</td></tr>
 
 											<tr><th><b>Should Have:</b></th></tr>
-											<tr><td>Separation of questionnaires aimed at different age groups and patient types (e.g. inpatients, outpatients).</td></tr>
-											<tr><td>Uncomplicated <b>UI</b> to allow design of questionnaires of users who do not have a background in computer science.</td></tr>
-											<tr><td>Simple design and UI for patients answering questionnaires.</td></tr>
-											<tr><td>User <b>authentication</b> for GOSH DRIVE admins using the web app.</td></tr>
-											<tr><td>Acceptance of different types of answers for the questionnaire designs e.g. drop-down, MCQ, sliders, text.</td></tr>
+											<tr><td>6) Separation of questionnaires aimed at different age groups and patient types (e.g. inpatients, outpatients).</td></tr>
+											<tr><td>7) Uncomplicated <b>UI</b> to allow design of questionnaires of users who do not have a background in computer science.</td></tr>
+											<tr><td>8) Simple design and UI for patients answering questionnaires.</td></tr>
+											<tr><td>9) User <b>authentication</b> for GOSH DRIVE admins using the web app.</td></tr>
+											<tr><td>10) Acceptance of different types of answers for the questionnaire designs e.g. drop-down, MCQ, sliders, text.</td></tr>
 
 											<tr><th><b>Could Have:</b></th></tr>
-											<tr><td>Different UI designs for different patient age groups answering questionnaires.</td></tr>
-											<tr><td><b>Statistics</b> to analyze general data about existing questionnaires.</td></tr>
-											<tr><td><b>Statistics</b> to analyse the answers obtained from questionnaires e.g. trends, patterns, etc.</td></tr>
+											<tr><td>11) Different UI designs for different patient age groups answering questionnaires.</td></tr>
+											<tr><td>12) <b>Statistics</b> to analyze general data about existing questionnaires.</td></tr>
+											<tr><td>13) <b>Statistics</b> to analyse the answers obtained from questionnaires e.g. trends, patterns, etc.</td></tr>
 
 											<tr><th><b>Won't Have:</b></th></tr>
-											<tr><td>Usage of separate frameworks for mobile and web development.</td></tr>
-											<tr><td>Log-in system for patients answering questionnaires.</td></tr>
-											<tr><td>Multilingual surveys.</td></tr>					
+											<tr><td>14) Usage of separate frameworks for mobile and web development.</td></tr>
+											<tr><td>15) Log-in system for patients answering questionnaires.</td></tr>
+											<tr><td>16) Multilingual surveys.</td></tr>					
 										</table>
 									</div>
 								</div>
@@ -327,6 +352,7 @@
 				</div>
 				<!-- /MOSCOW -->
 				
+
 				<!-- PERSONA -->
 				<div class="arlo_tm_section" id="persona">
 					<div class="arlo_tm_news_wrap">
@@ -421,6 +447,18 @@
 								<span>Related Frameworks, Technologies, and Projects</span>
 							</div>
 
+							<h4 style="margin-bottom: 15px;">What are Progressive Web Apps (PWA)?</h4>
+							<p>
+								Progressive Web Apps are application software delivered through the web, using technologies such as HTML, CSS and JavaScript[11]. It is intended
+								to work on any platform that uses a standard-compliant browser.<br></br>PWAs are generally portable across <b>both desktop and mobile platforms</b>.
+
+								Progressive Web Apps generally work on browsers, and do not require users to downlaod the web-app from services such as Google Play or the App Store.
+								PWAs may also have functionalities such as push notifications, service workers, and even offline usage. They make use of large web ecosystems
+								and plugins, and are relatively <b>easier to deploy</b> and maintain when compared to native applications in their respective app stores.[12]<br><br>
+
+								In our case, the questionnaires are delivered to users using a PWA, allowing them to <b>answer questionnaires on mobile devices</b> through web <b>browsers</b>.
+							</p><br><hr><br>
+
 							<!-- Related Technologies -->
 							<h2>Related Technologies</h2><br>
 							<p>Since our application is a completely new web-application, it was important for us to do some research on the various frameworks 
@@ -437,18 +475,18 @@
 												<h3>Django</h3>
 											</div>
 											<div class="text">
-												<p>Django is a Python framework which follows the model-template-view pattern. 
-													In practice, we found it to have many built-in features such as a back-end administration panel UI, easy 
+												<p>A Python web-framework which follows the model-template-view pattern, containing
+													many <b>built-in features</b> such as a back-end administration panel user interface, 
 													database mapping, and easy authentication [1]. <br><br>
 													
 													Django's <b>ORM</b> (object-relational mapping) layer handles database migrations very elegently, using Models to create 
 													tables instead of requiring users to use SQL directly [6]. Since 
 													we are required to store survey data in a database, this feature could be very helpful.<br><br>
 													
-													Another advantage of using Django is that it is very <b>secure</b> [6]. This web framework provides protections against
+													Django is also very <b>secure</b> [6]. This web framework provides protections against
 													XSS and CSRF attacks, SQL injections, clickjacking and many more.<br><br>
 													
-													For its downsides, time is required to get started to learn the basic Django boilerplate and structure, and Django
+													However, time is required to get started to learn the basic Django boilerplate and structure, and Django
 												    can also come across as a little bit <b>monolithic</b>.</p>
 											</div>
 										</div>
@@ -461,18 +499,17 @@
 												<h3>Flask</h3>
 											</div>
 											<div class="text">
-												<p>Flask is a light-weight Python microframework that is easier to get started with [7]. It is unopinionated, and 
+												<p>Flask is a light-weight Python microframework that is easier to get started with [7]. It is <b>unopinionated</b>, and 
 													allows the developers to implement things using their own methods. . <br><br>
-													
-													One advantage of using Flask is that it allows for a <b>good learning experience</b> as it forces us to
-													truly understand our code implementation due to its flexibility.<br><br>
 
-													Besides that, Flask also has great <b>performance</b>, due to it being a micro framework. It is more "low-level" than
-													Django, and contains fewer layers of abstraction between the web application and the database and HTTP requests.<br><br>
+													Flask has great <b>performance</b>, due to it being a micro framework. It is more "low-level" than
+													Django, and contains fewer layers of abstraction between the web application, the database and HTTP requests.<br><br>
+
+													Flask also allows for a <b>good learning experience</b> as it forces developers to
+													truly understand our code implementation due to its flexibility and versatility.<br><br>
 													
 													However, it offers much less built-in functionality than Django, and requires developers to be <b>flexible</b> [1] to 
-													make the best design decisions. Functionalities such as authentication is much harder to be 
-													implemented in the future.
+													make the best design decisions. Functionalities such as authentication are much harder to be implemented.
 												</p>
 											</div>
 										</div>
@@ -497,10 +534,14 @@
 													<br>&nbsp;
 												</ul>
 												<ul>
-													<li>Fast and light-weight.   <hr></li>
-													<li>Has a gentle learning curve [2] due to its simple API.<hr></li>
+													<li>Featherweight, with a size of only 18 KB in the framework's ZIP. It is fast to install and download.<hr></li>
+													<li>Has a gentle learning curve[2] due to its simple API, allowing for more straightforward development.<hr></li>
+													<br>&nbsp;
 												</ul>
-
+												<ul>
+													<li>Has an impressive package of tools[10], including Vue.js CLI, Development Tools, Vue Loader, Vue Router<hr></li>
+													<li>Their reactivity system is complex[10], and it often makes mistakes during rendering, requiring data to be flattened.<hr></li>
+												</ul>
 											</div>
 										</div>
 									</li>
@@ -514,15 +555,22 @@
 											</div>
 											<div class="text">
 												<ul>
-													<li>A popular framework, hence research and resource availability is high. <hr></li>
-													<li>Requires the use of various other libraries for different functionalities. <hr></li>
+													<li>A popular framework, hence research and resource availability is high, providing a great learning experience. <hr></li>
+													<li>Requires the use of various other libraries for different functionalities, depending on the use of dependencies. <hr></li>
 													<br>&nbsp;
 												</ul>
 											</div>
 											<div class="text">
 												<ul>
-													<li>Steeper learning curve [2] than Vue, but ‘create-react-app’ package helps us get started. <hr></li>
-													<li>Contains service workers [3] that allows users to see results even when offline. <hr></li>
+													<li>Steeper learning curve[2] than Vue, but the ‘create-react-app’ package helps us get started easily. <hr></li>
+													<li>Contains service workers[3] that can be registered to allow users to see results even when offline. <hr></li>
+													<br>&nbsp;
+												</ul>
+											</div>
+											<div class="text">
+												<ul>
+													<li>Virtual DOM in ReactJS makes user experience better and allows for faster development.<hr></li>
+													<li>It is an open source Facebook library. Hence, it is always under constant development. <hr></li>
 												</ul>
 											</div>
 										</div>
@@ -536,7 +584,7 @@
 									<h4>Back-End Conclusion:</h4>
 								</div>
 								<p>We have decided to use <b>Django</b> over Flask despite its steeper initial learning curve. 
-									This is because we believe Django lets us focus on the actual questionnaire designs in the long run, 
+									This is because we believe Django lets us focus on the actual questionnaire implementations in the long run, 
 									as a lot of functionality such as authentication and database management is already built-in. 
 									We also think that Flask may introduce many bugs in the future due to our inexperience in back-end development so far.</p>
 							</div>
@@ -548,7 +596,7 @@
 								</div>
 								<p>Both frameworks were reasonable to us, but we decided that <b>React</b> was the best choice as our front-end JavaScript framework in the end. 
 									Despite having a steeper learning curve, we decided that the ‘create-react-app’ package can help us overcome this problem. 
-									The service workers also prove to be an advantage for developing a progressive web app.</p>
+									We believe React provides a better learning and research experience due to the availability of its resources.</p>
 							</div><br><br>
 							<!-- /Related Technologies -->
 
@@ -566,10 +614,10 @@
 											</div>
 											<div class="text">
 												<p>SurveyMonkey is a website designed particularly for admins to design questionnaires. 
-													It is written in Python and developed with the .NET framework.
+													It is written in <b>Python</b> and developed with the <b>.NET framework</b>.
 													It offers a wide range of functionalities, including functionalities to import questionnaires from templates, 
-													analyzing results, and obtaining verified questionnaire responses.</p><br>
-												<p>It is very similar to our project, Hospital Surveys, as it allows for questionnaires that are highly customizable[4]. 
+													analysing results, and obtaining verified questionnaire responses.</p><br>
+												<p>It is similar to our project, Hospital Surveys, as it allows users to create questionnaires that are highly <b>customizable</b>[4]. 
 													However, not all of these functionalities will be implemented, as many of these features are outside the scope of our project.</p>
 											</div>
 										</div>
@@ -584,9 +632,9 @@
 											</div>
 											<div class="text">
 												<p>Google forms is also designed for users to design questionnaires, 
-													and for users to respond to these questionnaires easily[5] and efficiently.
-													Google Forms allows for admins to design questionnaires in a short amount of time. 
-													Due to its popularity, users are able to obtain a large amount of responses easily.</p><br>
+													and for users to respond to these questionnaires <b>easily and efficiently</b>[5].
+													Google Forms allows admins to design questionnaires in a short amount of time. 
+													Due to its popularity, users are able to obtain a large number of responses easily.</p><br>
 												<p>We plan to implement a similar, simple UI design for users to design questionnaires, 
 													but we require more detailed ways to process and store the data from the questionnaire responses, i.e. through a database. </p>
 											</div>
@@ -596,9 +644,9 @@
 							</div><br>
 							
 							<h4 style="padding-bottom: 15px;">Conclusion</h4>
-							<h7>Google Forms offers less customization and functionality than SurveyMonkey but is much more user-friendly. 
-								On the other hand, SurveyMonkey is more focused on the questionnaires itself, and places more emphasis on the users creating the questionnaires. 
-								They both have their own merits. Google Forms' <b>straight-forward</b> UI and SurveyMonkey's <b>customizability</b> were both great features to have for our web-app.
+							<h7>Google Forms offers less customization and functionality than SurveyMonkey but is much more user-friendly and easy to use. 
+								On the other hand, SurveyMonkey is more focused on the questionnaires themselves, and specializes in making detailed / professional questionnaires, obtaining verified responses and designing customizable surveys. 
+								They both have their own merits, and it was difficult to pick one over the other as a primary reference project. Google Forms' <b>straight-forward</b> UI and SurveyMonkey's <b>customizability</b> were both great features to have on our web-app.
 							</h7>
 							<!--/ Related Projects-->
 						</div>
@@ -618,8 +666,14 @@
 							
 							<h4>App Development: Two Approaches</h4><br>
 							<p><b>We had two approaches in developing the web application:</b> <br>
-								<b>&emsp;a)</b> We could develop the web-app using a <b>stand-alone Python</b> library such as Django that can also handle template rendering.<br>
-								<b>&emsp;b)</b> We could use <b>separate frameworks</b> for front-end and back-end development, with a Javascript front-end consuming a Python back-end REST API.<br>
+								<ol style="padding: 5px 0 0 25px">
+									<li>
+										We could develop the web-app using a <b>stand-alone Python</b> library such as Django that can also handle template rendering.<br>
+									</li>
+									<li>
+										We could use <b>separate frameworks</b> for front-end and back-end development, with a Javascript front-end consuming a Python back-end REST API.<br>
+									</li>
+								</ol>
 							</p><br>
 							
 							<p style="padding-bottom: 10px;">Thus, we decided to compare both approaches:</p>
@@ -641,7 +695,7 @@
 										final web-app looking more elegant and eye-catching.</td></tr>
 								<tr><td><b>+ Web-App Performance:</b><br> 
 										A separate JavaScript front-end can render separately from the server, only reloading the page when necessary [8]
-										(when it is required to fetch data). This reduces loading times of the web-app.</td></tr>
+										(when it is required to fetch data through HTTP requests). This reduces loading times of the web-app.</td></tr>
 							</table>
 							<br>
 							<h4 style="padding-bottom: 10px;">Conclusion</h4>
@@ -717,10 +771,27 @@
 										Avalailable: <a href="https://vsupalov.com/do-i-need-to-combine-django-with-vue-or-react/">
 										https://vsupalov.com/do-i-need-to-combine-django-with-vue-or-react/</a><br>
 										[Accessed: Nov 9, 2019]<br>
+										<br>
+										<b> The Pros and Cons of Vue.js</b><br> 
+										[10] Alexsoft, "The Good and the Bad of Vue.js Framework Programming"<br>
+										Avalailable: <a href="https://www.altexsoft.com/blog/engineering/pros-and-cons-of-vue-js/">
+										https://www.altexsoft.com/blog/engineering/pros-and-cons-of-vue-js/</a><br>
+										[Accessed: Nov 11, 2019]<br>
+										<br>
+										<b> Progressive Web Apps</b><br> 
+										[11] Wikipedia, "Progressive Web Apps"<br>
+										Avalailable: <a href="https://en.wikipedia.org/wiki/Progressive_web_application">
+										https://en.wikipedia.org/wiki/Progressive_web_application</a><br>
+										[Accessed: Nov 13, 2019]<br>
+										<br>
+										<b> A Guide to Progressive Web Apps</b><br> 
+										[12] Kevin Farrugia, "A Beginner's Guide To Progressive Web Apps"<br>
+										Avalailable: <a href="https://www.smashingmagazine.com/2016/08/a-beginners-guide-to-progressive-web-apps/">
+										https://www.smashingmagazine.com/2016/08/a-beginners-guide-to-progressive-web-apps/</a><br>
+										[Accessed: Nov 13, 2019]
 									</p>
-									
+						
 								</div>
-								<br><br>
 							</div>
 						</div>
 					</div>
@@ -768,7 +839,7 @@
 													<div class="date_wrap">
 													</div>
 													<div class="title_holder">
-														<h3><a href="index.html">ARCHITECTURE DIAGRAM</a></h3>
+														<h3><a href="index.html">SEQUENCE DIAGRAM</a></h3>
 													</div>
 												</div>
 											</div>
@@ -875,7 +946,8 @@
 								</ul>
 							</div>
 							<br>&nbsp;<br>&nbsp;
-							<hr style="border-top: 3px solid #204060;"><br>
+							<hr style="border-top: 3px solid #204060;"><br>&nbsp;
+							
 							<div class="inner_wrap">
 								<div class="total">
 									<div class="arlo_tm_title_holder news" id="design">
@@ -892,7 +964,7 @@
 										React.js is used as the front-end web framework for the <b>user interface</b> of our web-app, and is used to create all components
 										for the UI. React-Bootstrap and Ant Design are also used for their components, and helped in designing <b>responsive web designs.</b> 
 										The Axios library is used for HTTP requests to obtain data from our back-end <b>database</b>, mostly through GET and POST requests.<br><br>
-										Chart.js is used to plot <b>statistical</b> graphs and visualizations. Data displayed on graphs are alsp obtained through HTTP requests.
+										Chart.js is used to plot <b>statistical</b> graphs and visualisations. Data displayed on graphs are alsp obtained through HTTP requests.
 									</p><br>
 									
 									<table id="moscow_list" >
@@ -907,7 +979,7 @@
 											<td><b>Admin Panel</b></td>
 											<td>src/manage/[components]</td>
 											<td>A Must Have. An admin panel allows GOSH DRIVE admins to design and manage questionnaires.</td>
-											<td>Required</td>
+											<td>Required for access.</td>
 										</tr>
 										
 										<tr>
@@ -920,17 +992,17 @@
 										<tr>
 											<td><b>Statistical Analysis</b></td>
 											<td>src/statistics/[components]</td>
-											<td>A Could Have. Allows users to view and analyse general statistics and visualizations about survey and response data.</td>
+											<td>A Could Have. Allows users to view and analyse general statistics and visualisations about survey and response data.</td>
 											<td>Not Required</td>
 										</tr>
 
 										<tr>
 											<td><b>View Responses Page</b></td>
 											<td>src/manage/[components]</td>
-											<td>Additional functionality, not explicitly stated in the MoSCoW list. Allows GOSH DRIVE admins to view
-												all responses to the questionnaires.
+											<td>Additional functionality, not explicitly stated in the MoSCoW list. Allows GOSH DRIVE admins to view and export
+												questionnaire responses.
 											</td>
-											<td>Required</td>
+											<td>Required for access.</td>
 										</tr>
 									</table><br>
 									
@@ -1065,7 +1137,7 @@
 									<hr style="border-top: 1px dotted grey;"><br>
 									<h3 style="padding-bottom: 15px;">User <b>Authentication</b></h3>
 									<p>
-										Django's rest-auth library was used to generate a token for the front-end UI when users sign in using Django Admin credentials. 
+										Django's rest-auth library was used to generate a token for the React front-end when users sign in using Django Admin credentials. 
 										React Redux then stores this token for 60 minutes in the browser. This creates a session that lasts for 60 minutes for users that have signed in, 
 										and allows users to navigate to any web page requiring <b>authentication</b> during that time without signing in again.
 									</p><br>
@@ -1140,7 +1212,6 @@
 											</li>
 										</ul>
 									</div>
-
 								</div>
 							</div>		
 						</div>
@@ -1148,6 +1219,7 @@
 				</div>
 				<!-- /DESIGN -->
 
+				
 				<!-- HCI -->
 				<div class="arlo_tm_section relative" id="portfolio">
 					<div class="arlo_tm_portfolio_wrapper_all" style="background-color: #ecf2f8;">
@@ -1217,24 +1289,25 @@
 							<div class="inner_wrap">
 								<div class="total">
 									<h3 style="padding-bottom: 15px;">Testing Strategy</h3>
-									<h5 style="padding-bottom: 10px;">We used multiples strategies when testing our software:</h5>
+									<h5 style="padding-bottom: 10px;">We used multiples strategies to test our software:</h5>
 										<ol style="padding-left: 20px;">
-											<li style="padding-bottom: 10px;"><b>Testing Often:</b><br>
+											<li style="padding-bottom: 15px;"><b>Testing Often:</b><br>
 												We made sure to always test our web-app frequently, to ensure that all functionalities are working
 												normally at all times. 
 											</li>
 
-											<li style="padding-bottom: 10px;"><b>Regression Testing:</b><br>
+											<li style="padding-bottom: 15px;"><b>Regression Testing:</b><br>
 												When adding new functionalities, we always made sure that these new funcionalities did not break
-												any existing functionalities.
+												any existing functionalities. This was done by first makng changes to a test server before pushing it
+												to the main server.
 											</li>
 
-											<li style="padding-bottom: 10px;"><b>Usage of Virtual Environments:</b><br>
+											<li style="padding-bottom: 15px;"><b>Usage of Virtual Environments:</b><br>
 												Virtual Environments proved to be very helpful, as it allows us to test dependencies and useful packages
-												without installing them within our devices, saving a lot of time and device memory.
+												without installing them on our devices, saving a lot of time and device memory.
 											</li>
 
-											<li style="padding-bottom: 10px;"><b>Leaving Time for Fixing:</b><br>
+											<li style="padding-bottom: 5px;"><b>Leaving Time for Fixing:</b><br>
 												Before testing our functionalities, we also made sure that there was enough time for us to 
 												fix any broken code or functionalities after the testing process.
 											</li>
@@ -1301,9 +1374,9 @@
 							<div class="inner_wrap">
 								<div class="total">
 									<h3 style="padding-bottom: 15px;">Backend API Testing</h3>
-									<p>We simply using an application called Postman to test our backend whether they are working correctly.
-										Postman acting as a client, just like our browser. But comparing with browser, it can send POST request easily.
-										So we can use Postman to test if the returned value is what we expect, etc.
+									<p>We simply use an application called Postman to test our backend to check if it is working correctly.
+										Postman acts as a client, just like our browser. But compared to the browser, it can send POST request easily.
+										Hence, we can use Postman to test if the returned value is what we expected, etc.
 									</p>
 								</div>
 								<br><br>
@@ -1333,10 +1406,10 @@
 							<div class="inner_wrap">
 								<div class="total">
 									<h3 style="padding-bottom: 15px;">Performance / Stress Testing</h3>
-									<p>Stress testing was used to test the performance of our web-app. There may be possibilities where 
-										admins need to manage <b>large number of questionnaires</b>, causing huge loads of data in the database.<br><br>
+									<p>Stress testing was used to test the performance of our web-app. There may be situations where GOSH
+										admins need to manage <b>large number of questionnaires</b>, so there will be huge loads of data in the database.<br><br>
 										Thus, we tested the time taken for SQL queries in database tables with respect to number of rows in a test server.
-										The number of rows represents the size of questionnaire and survey data.
+										The number of rows represents the size of questionnaires and survey data.
 									</p><br>
 									
 									<div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; padding: 0 0 35px 0;">
@@ -1369,8 +1442,8 @@
 							<div class="inner_wrap">
 								<div class="total">
 									<h2 style="margin-bottom: 10px;">K-Means Clustering</h2>
-									For the statistical analysis part of our web-app, we decided to implement a basic and common unsupervised 
-									<b>Machine Learning algorithm - K-Means Clustering</b>. This algorithms is used to analyze the age of the survey respondents
+									For graphical visualisations of our web-app, we decided to implement a basic and common unsupervised 
+									<b>Machine Learning algorithm - K-Means Clustering</b>. This algorithms is used to analyze the ages of survey respondents
 									by classifying and grouping respondent ages based on clustering patterns. Each group represents an (clustered) <b>estimated age group of survey respondents</b> 
 									grouped by the algorithm.<br>&nbsp;<br>&nbsp;
 
@@ -1388,16 +1461,16 @@
 									This value is the Hyperparameter of this algorithm. Shown below are the results of different values of k, ranging from values 2-4:<br>&nbsp;
 
 									<div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; padding: 0 0 35px 0;">
-										<img src=img/new/graphs/2Cluster.png width="32%" style="padding: 0 5px 0 5px"><br>&nbsp;
-										<img src=img/new/graphs/3Cluster.png  width="32%" style="padding: 0 5px 0 5px"><br>&nbsp;
-										<img src=img/new/graphs/4Cluster.png width="32%" style="padding: 0 5px 0 5px"><br>&nbsp;
+										<img src=img/new/graphs/2Cluster.png width="32%" style="padding: 0 5px 5px 5px"><br>&nbsp;
+										<img src=img/new/graphs/3Cluster.png  width="32%" style="padding: 0 5px 5px 5px"><br>&nbsp;
+										<img src=img/new/graphs/4Cluster.png width="32%" style="padding: 0 5px 5px 5px"><br>&nbsp;
 									</div>
 									
 									<h4 style="margin-bottom: 10px;">Discussion / Conclusions:</h4>
 									The algorithm seems to perform the best when clustering our data into <b>2</b> clusters <b>(younger and older patients)</b>, which may be the optimal number in our case.
 									This may be due to our small sample size, as larger values of k may force the algorithm to cluster data with more 
-									uncertainty. Also, the algorithm <b>fails when the sample size is lower than k</b> (the number of clusters), which occurs when there are very fewe
-									responses to the surveys.<br><br> Hence, in order to improve the performance of this algorithm or use larger values of k, the most direct
+									uncertainty. Also, the algorithm <b>fails when the sample size is lower than k</b> (the number of clusters), which occurs when there are very few
+									responses to the surveys.<br><br> Hence, in order to improve the performance of this algorithm or to allow for larger values of k, the most direct
 									solution is to <b>provide a larger sample size</b>.
 
 								</div>
@@ -1475,7 +1548,7 @@
 											<td><b>5/5</b></td>
 											<td>
 												The general UI of our web-app is generally quite pleasant to look at. 
-												Since we used design elements from React Bootstrap and Ant Design, the overall design looks very clean and is responsive.<br><br>
+												Since we used design elements from React Bootstrap and Ant Design, the overall design is responsive and looks very clean.<br><br>
 												The UI is also easy to use, which is important for users with no background in computing, 
 												as we made sure not to crowd the UI with too many elements.
 											</td>
@@ -1486,9 +1559,8 @@
 											<td><b>Functionality</b></td>
 											<td><b>4/5</b></td>
 											<td>
-												Our web app provides many functionalities to our users, including authentication, managing and answering surveys, viewing survey responses, 
-												and even generating statistics for analysis, storing all data in PostgreSQL. <br><br>More detailed functionalities such as file 
-												exporting or more survey answer options could be added in the future if given more time.
+												Our web app provides many functionalities to our users, including authentication, managing and answering surveys, viewing and exporting survey responses, 
+												and even displaying statistics for analysis, storing all data in PostgreSQL.
 											</td>
 										</tr>
 
@@ -1546,7 +1618,7 @@
 												We used many different tools to manage our time and available resources, including Bi-Weekly Reports, Gantt Charts, and 
 												Microsoft Teams. This allows us to keep track of the progress of our project.<br>&nbsp;<br>
 
-												Also, we have a clear line between front-end and back-end development, and each team member can be assigned their own respective roles 
+												Also, we have a clear line between front-end and back-end development, so each team member can be assigned their own respective roles 
 												for easy project management, allowing developers to work on separate tasks efficiently.
 										</tr>	
 									</table>
@@ -1568,7 +1640,7 @@
 											<td><b>High</b></td>
 											<td><b>Additional Survey Customizability</b></td>
 											<td>
-												More customizability could be added to the overall look of the questionnaires.
+												More customizability could be added to change the overall look of the questionnaires.
 												GOSH admins may set the background image or colors of the survey forms, making them more appealing to child patients answering surveys.
 											</td>
 										</tr>
@@ -1576,10 +1648,10 @@
 										<tr>
 											<td><b>2.</b></td>
 											<td><b>Medium</b></td>
-											<td><b>Increase Number of Answer Types.</b></td>
+											<td><b>Increase Number of Answer Types</b></td>
 											<td>
-												As of now, GOSH admins are able to choose between 3 expected answer types for each question on the surveys: Text Area, Multiple Choice Questions,
-												and Sliders. If we were given more time, we would add answer types such as checkboxes, date pickers, etc. to allow for more flexibilty.
+												As of now, GOSH admins are able to choose between 4 expected answer types for each question on the surveys: Text Area, Multiple Choice Questions, Checkboxes
+												and Sliders. If we were given more time, we would add answer types such as rankings, date pickers, etc. to allow for more flexibilty.
 											</td>
 										</tr>
 
@@ -1589,7 +1661,7 @@
 											<td><b>OAuth Authentication / Separate Accounts</b></td>
 											<td>
 												We are currently using Django's rest-auth for authentication of the web-app. This creates a centralized system, in which all surveys are stored in.
-												We would like to use OAuth authentication, allowing separate accounts for users to store separate surveys. Users can also use accounts such as Gmail to log in.
+												We would like to use OAuth authentication, allowing separate accounts for users to store separate surveys. Users can then use accounts such as Gmail to log in.
 											</td>
 										</tr>
 
@@ -1599,7 +1671,7 @@
 											<td><b>More Complex Statistical Analysis</b></td>
 											<td>
 												Currently, we are using one machine learning algorithm on our statistical analysis (Unsupervised K-Means Clustering) on patient ages. We would like
-												to add on to these algorithms, and create more complex and meaningful visualizations for more data analytics.
+												to add on to these algorithms, and create more complex and meaningful visualisations for more data analytics.
 											</td>
 										</tr>
 									</table>
@@ -1626,8 +1698,8 @@
 									<br>
 									In order to manage questionanires in the admin panel (/manage), it is required to log in to the web-app.<br></p>
 									<b>
-										Admin Panel Username: team17<br>
-										Admin Panel Password: team17<br>
+										Username: team17<br>
+										Password: team17<br>
 									</b>
 									<br><hr><br>
 									<h3>Deployment Manual (Heroku):</h3><br>
@@ -1640,18 +1712,18 @@
 
 									<h5 style="padding-bottom: 10px;">Deployment Guide:</h5>
 									<ol style="padding-left: 20px;">
-										<li >Download the code from <a href="https://github.com/michaellmy/hospital-surveys-dev">this</a> repository, by downloading the zip file, or running the command:</li>
+										<li >Download the code from <a href="https://github.com/michaellmy/hospital-surveys-dev">this</a> repository, by downloading the <b>zip file (recommended)</b>, or running the command:</li>
 										<div id="shell_box">
 											<p><i>$ git clone https://github.com/michaellmy/hospital-surveys-dev.git</i></p>
 										</div>
 
-										<li>Create a new Heroku project (free), then navigate into the directory containing manage.py.</li>
+										<li>Create a new Heroku project on Heroku.com (free), then navigate into the directory containing manage.py.</li>
 										<div id="shell_box">
 											<p><i>$ cd hospital-surveys-dev</i></p>
 										</div>
 
 										<li>Log into the Heroku CLI, then initialize a git repository in a new or existing directory. 
-											These few instructions can also be found in Heroku's project dashboard.
+											These few instructions can also be found in the Heroku project's dashboard.
 										</li>
 										
 
@@ -1674,7 +1746,7 @@
 											<p><i>$ heroku run python manage.py createsuperuser</i></p>
 										</div>
 
-										The web app can now be found at <b>https://[heroku-project-name].herokuapp.com</b>. A Heroku Postgres database will be automatically attached to the web-app during deployment, 
+										The web app can now be found at <b>https://[heroku-project-name].herokuapp.com</b>. <br>A Heroku Postgres database will be automatically attached to the web-app during deployment, 
 											and the credentials for the database can be found under the <b>Heroku Project -> Resources -> Add-ons -> Heroku Postgres -> Settings -> View Credentials</b>. 
 									</ol>
 									
@@ -1708,7 +1780,6 @@
 								
 								<h3 style="padding-bottom: 30px;">Bi-Weekly Reports</h3>
 								<div>
-									<h5 style="padding-bottom: 10px;">We also wrote bi-weekly reports, recording the progress of our project over the two terms.</h5>
 									<p><strong>Term 1:</strong>
 										<ul style="margin-left: 15px;">
 											<li><a href="reports/Report1.pdf">Report 1: 7 October 2019 – 12 November 2019</a></li>

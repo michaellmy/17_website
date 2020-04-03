@@ -46,7 +46,7 @@
 #dilemma tr:hover {background-color: #ddd;}
 
 #dilemma th {
-	padding-left: 30px;
+	padding-left: 20px;
 	padding-top: 12px;
 	padding-bottom: 12px;
 	text-align: left;
@@ -55,7 +55,7 @@
 }
 
 #dilemma td {
-	padding-left: 30px;
+	padding-left: 20px;
 }
 
 /* MoSCoW List  */
@@ -94,7 +94,7 @@
 
 #shell_box {
 	padding: 10px 0 10px 15px; 
-	margin-bottom: 15px; 
+	margin: 5px 0 15px 0 ; 
 	background-color: #e6e6e6;
 	border-radius: 15px
 }
@@ -236,11 +236,11 @@ img.svg{
 .arlo_tm_leftpart_wrap.opened{left: -300px;}
 .arlo_tm_leftpart_wrap .logo_wrap{
 	background-color: #041230;
-	padding: 50px 20px;
+	padding: 30px 20px;
 	width: 100%;
 	float: left;
 	text-align: center;
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 	border-bottom: 1px solid rgba(255,255,255,.1);
 	
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
